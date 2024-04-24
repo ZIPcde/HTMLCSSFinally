@@ -1,12 +1,16 @@
 import Nav from './components/nav/nav';
+import Header from './components/header/header';
+import Offer from './components/offer/offer';
+import Products from './components/products/products';
 import './App.css';
-import Ofis from '../src/picts/ofis.png';
 
 function App() {
   return (
     <div className="App">
       <Nav />
-      <img src={Ofis} alt="777" />
+      <Header />
+      <Offer />
+      <Products />
     </div>
   );
 }

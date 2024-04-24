@@ -4,14 +4,14 @@
   
   .ellipseholder,
   .basket2,
-  .ellipse, 
-  .basketcounter {
+  .ellipse {
     position: absolute;
     top: 0;
     left: 0;
   }
   
   .ellipseholder {
+    text-align: center;
     height: 0px;
     margin-top: -7px;
     margin-left: 20px;
@@ -23,10 +23,12 @@
   }
 
   .basketcounter {
+    position: absolute;
+    text-align: center;
     color: white;
     height: 0px;
-    margin-top: 0px;
-    margin-left: 5px;
+    margin-top: -16px;
+    margin-left: 2px;
     z-index: 1; /* Первая картинка будет на переднем плане */
   }
 

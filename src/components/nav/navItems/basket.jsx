@@ -6,7 +6,7 @@ const Basket = () => {
   return (
     <div className="basketcontainer">
       <div className="ellipseholder">
-      <p className="basketcounter">0</p>
+      <div className="basketcounter"><p>0</p></div>
       <img className="ellipse" src={nav_Ellipse} alt="nav_Ellipse.svg" />
       </div>
       <img className="basket" src={nav_basket} alt="nav_basket.svg" />
