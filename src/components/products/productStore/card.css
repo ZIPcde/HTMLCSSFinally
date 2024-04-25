@@ -1,0 +1,39 @@
+.card {
+width: 360px;
+height: 587px;
+top: 1576px;
+left: 230px;
+gap: 0px;
+opacity: 0px;
+margin: auto;
+}
+
+.card_img__holder {
+    /* float: left;
+    margin-right: 10px; */
+    text-align: center;
+    /* background-color: burlywood; */
+}
+
+.card_img__img {
+    height: 420px;
+    max-width: 360px;
+    max-width: 100%;
+    object-fit: cover; /* Обрезать картинку по ширине */
+}
+
+.card_txt__holder {
+
+}
+
+.card_txt__name {
+
+}
+
+.card_txt__discr {
+
+}
+
+.card_txt__price {
+
+}
