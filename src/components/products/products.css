@@ -1,5 +1,5 @@
 
-.h2up {
+.product_h2up {
     margin-top: 50px;
     margin-bottom: 8px;
     /* font-family: Lato-Bold; */
@@ -12,10 +12,11 @@
 
 }
 
-.h3up {
+.product_h3up {
     margin-top: 0px;
     text-align: center;
     color: #9F9F9F;
+    margin-bottom: 48px;
     /* font-family: Lato-Regular; */
 }
 .prod {
@@ -34,4 +35,32 @@
     /* Будет создано 3 ряда */
     grid-template-rows: 250px 10vw 15rem;
 
+}
+
+.product_btnadd__div {
+    text-align: center;
+    margin-top: 48px;
+}
+
+.product_btnadd__btn {
+    width: 212px;
+    height: 48px;
+    background-color: white;
+    border: 2px #F26376 solid;
+    color: #F26376;
+
+}
+
+.product_btnadd__btn:hover {
+    width: 212px;
+    height: 48px;
+    background-color: #F26376;
+    border: 2px #F26376 solid;
+    color: white;
+
+
+}
+
+.product_all {
+    margin-bottom: 95px;
 }

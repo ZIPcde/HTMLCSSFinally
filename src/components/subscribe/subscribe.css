@@ -1,0 +1,25 @@
+.subscribe_div__holder {
+    height: 448px;
+    background-image: url("./img/Layer 41.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: left;
+    display: flex;
+    align-items: center;
+    opacity: 0.5;
+    z-index: 2;
+}
+
+.subscribe_div__pict {
+    text-align: center;
+    width: 360px;
+    height: 225px;
+    z-index: 1;
+}
+
+.subscribe_div__email {
+    text-align: center;
+    width: 557px;
+    height: 142px;
+    z-index: 1;
+}
