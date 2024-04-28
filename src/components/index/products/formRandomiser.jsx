@@ -1,6 +1,6 @@
 import React from "react";
-import productList from './productStore/productList.js';
-import Card from './productStore/card.jsx';
+import productList from '../../productStore/productList.js';
+import Card from '../../productStore/card.jsx';
 import './formRandomiser.css';
 
 function getRandomIndexes(array) {

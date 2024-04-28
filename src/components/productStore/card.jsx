@@ -1,7 +1,7 @@
 import React from "react";
 import './card.css';
 import productList from './productList';
-import nav_basket from '../../nav/navItems/img/nav_basket.svg';
+import nav_basket from '../nav/navItems/img/nav_basket.svg';
 
 
 const Card = (props) => {

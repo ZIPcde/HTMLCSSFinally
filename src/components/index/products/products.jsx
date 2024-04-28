@@ -1,8 +1,9 @@
 import React from 'react';
 import "./products.css";
-import '../../fonts/Lato-Regular.ttf';
-import '../../fonts/Lato-Bold.ttf';
+import '../../../fonts/Lato-Regular.ttf';
+import '../../../fonts/Lato-Bold.ttf';
 import MyFormRandom from './formRandomiser';
+import { Link } from 'react-router-dom';
 
 const Products = () => {
     return (
@@ -15,7 +16,10 @@ const Products = () => {
             <MyFormRandom />
             </div>
             <div className="product_btnadd__div">
-                <button className="product_btnadd__btn">Browse All Product</button>
+                <Link to="/catalog">
+                    <button className="product_btnadd__btn">Browse All Product</button>
+                </Link>
+                
             </div>
         </div>
     );

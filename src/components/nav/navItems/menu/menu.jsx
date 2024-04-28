@@ -20,7 +20,6 @@ const PopupMenu = () => {
       <img src={NavMenu} alt="menuBtnImg"/>
       {isOpen && (
         <div className="popup-menu">
-          {/* Ваша HTML разметка для меню */}
           <Filling />
         </div>
       )}
