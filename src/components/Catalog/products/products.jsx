@@ -6,24 +6,27 @@ import MyFormRandom from './formRandomiser';
 import { Link } from 'react-router-dom';
 import Arrow from '../products/img/Vector.png';
 import Lines from '../products/img/Lines.svg';
-import SizeSwitcher  from './menu/sizes/fillingOfMenu';
+
+import SizesFilter  from './menu/sizes/SizesFilter';
+// import SizesFilter  from './menu/sizes/fillingOfMenu';
 import Menufilter from './menu/menuFilter/fillingOfMenu';
 
 const Products = () => {
-    const [sizes, setSizes] = useState([
-        { label: "XS", checked: false },
-        { label: "S", checked: false },
-        { label: "M", checked: false },
-        { label: "L", checked: false },
-        { label: "XL", checked: false }
-      ]);
-    
-      const handleSizeChange = (label) => {
-        const updatedSizes = sizes.map(size =>
-          size.label === label ? { ...size, checked: !size.checked } : size
-        );
-        setSizes(updatedSizes);
-      };
+
+   const [selectedSizes, setSelectedSizes] = useState({
+    XS: false,
+    S: false,
+    M: false,
+    L: false,
+    XL: false
+  });
+
+  const handleSizeChange = (size) => {
+    setSelectedSizes(prevState => ({
+      ...prevState,
+      [size]: !prevState[size]
+    }));
+  };
 
     const [isOpen, setIsOpen] = useState(false);
   
@@ -81,8 +84,8 @@ const Products = () => {
                     <div className="popup-menu-container" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                     <img className='catalog_filter__arrow' src={Arrow} alt=''/>
                             {isOpen && (
-                            <div className="popup-menu">
-                                <SizeSwitcher sizes={sizes} onChange={handleSizeChange} />
+                            <div className="popup-menu menu222">
+                                <SizesFilter selectedSizes={selectedSizes} handleSizeChange={handleSizeChange} />
                             </div>
                             )}
                         </div>
@@ -101,7 +104,7 @@ const Products = () => {
                 
             </div>
             <div className='product_holder__output'>
-            <MyFormRandom />
+            <MyFormRandom selectedSizes={selectedSizes} handleSizeChange={handleSizeChange} />
             </div>
             <div className="product_btnadd__div">
                 <Link to="/catalog">
