@@ -4,6 +4,8 @@ import Offer from './components/offer/offer';
 import Products from './components/products/products';
 import Discount from './components/discount/discount';
 import Subscribe from './components/subscribe/subscribe';
+import Footer from './components/footer/footer';
+
 import './App.css';
 
 function App() {
@@ -15,6 +17,7 @@ function App() {
       <Products />
       <Discount />
       <Subscribe />
+      <Footer />
     </div>
   );
 }
