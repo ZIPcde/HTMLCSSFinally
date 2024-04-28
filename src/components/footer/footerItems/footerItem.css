@@ -1,0 +1,29 @@
+.footerflex {
+    display: flex;
+    padding: 0;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.footer_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+    width: 32px;
+    height: 32px;
+    background-color: white;
+}
+
+.footer_block:hover{
+    background-color: #F16D7F;
+}
+
+.footer_block:hover .social {
+    color: #ffffff;
+}
+
+.social {
+    color: #000000;
+}
