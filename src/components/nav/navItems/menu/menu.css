@@ -1,0 +1,51 @@
+.popup-menu-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .popup-menu {
+    width: 232px;
+    height: 700px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-width: 120px;
+    z-index: 9999;
+  }
+  
+  .popup-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .popup-menu li {
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  .popup-menu li:hover {
+    background-color: #f0f0f0;
+  }
+
+  .popup_menu__ul {
+    list-style-type: none; /* Убираем маркеры у элементов списка */
+  padding: 0; /* Убираем отступы вокруг списка */
+    text-align: left;
+    margin-left: 0px;
+  }
+
+  li {
+    margin-left: 40px; /* Пример отступа слева для каждого элемента списка */
+  }
+
+  .menu_category__red {
+    color: #F16D7F;
+    text-align: left;
+    margin-left: 20px;
+  }
