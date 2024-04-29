@@ -1,5 +1,6 @@
 // reducer.js
-import { ADD_TO_CART, REMOVE_FROM_CART, CLEAR_CART } from '../components/Cart/actions';
+import { ADD_TO_CART, REMOVE_FROM_CART, CLEAR_CART } from '../actions/actions';
+import productList from '../components/productStore/productList';
 
 const initialState = {
   cartItems: []
@@ -12,7 +13,10 @@ const cartReducer = (state = initialState, action) => {
       const existingItemIndex = state.cartItems.findIndex(item => item.productId === productId);
       if (existingItemIndex !== -1) {
         const updatedCartItems = [...state.cartItems];
-        updatedCartItems[existingItemIndex].quantity++;
+        updatedCartItems[existingItemIndex] = {
+          ...updatedCartItems[existingItemIndex],
+          quantity: updatedCartItems[existingItemIndex].quantity + 1
+        };
         return { ...state, cartItems: updatedCartItems };
       } else {
         const productToAdd = productList.find(product => product.id === productId);

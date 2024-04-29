@@ -1,18 +1,20 @@
 import React from "react";
+import { useDispatch } from 'react-redux';
 import './card.css';
 import productList from './productList';
 import nav_basket from '../nav/navItems/img/nav_basket.svg';
-
+import AddToCartButton from '../Cart/AddToCartButton';
 
 const Card = (props) => {
     const { folder } = productList[props.indexout];
-    console.log(`./productStore/${folder}`);
+    // console.log(`./productStore/${folder}`);
     return (
         <div className="card">
             <div className="card_img__holder" style={{ backgroundColor: productList[props.indexout].backgroundColor }}>
                 <img className="card_img__img" src={require(`./${folder}`)} alt="img" />
                 <div className="overlay">
                     <div className="card_img__addtocart">
+                        <AddToCartButton productId={props.indexout} />
                         <img className="basket" src={nav_basket} alt="nav_basket.svg" />
                         <div>
                             <p>Add to cart</p>
