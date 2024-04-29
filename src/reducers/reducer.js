@@ -1,5 +1,4 @@
-// reducer.js
-import { ADD_TO_CART, REMOVE_FROM_CART, CLEAR_CART } from '../actions/actions';
+import { ADD_TO_CART, REMOVE_FROM_CART, CLEAR_CART, UPDATE_QUANTITY } from '../actions/actions';
 import productList from '../components/productStore/productList';
 
 const initialState = {
@@ -9,19 +8,19 @@ const initialState = {
 const cartReducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_TO_CART:
-      const productId = action.payload;
-      const existingItemIndex = state.cartItems.findIndex(item => item.productId === productId);
-      if (existingItemIndex !== -1) {
+      const productIdToAdd = action.payload;
+      const existingCartItemIndex = state.cartItems.findIndex(item => item.productId === productIdToAdd);
+      if (existingCartItemIndex !== -1) {
         const updatedCartItems = [...state.cartItems];
-        updatedCartItems[existingItemIndex] = {
-          ...updatedCartItems[existingItemIndex],
-          quantity: updatedCartItems[existingItemIndex].quantity + 1
+        updatedCartItems[existingCartItemIndex] = {
+          ...updatedCartItems[existingCartItemIndex],
+          quantity: updatedCartItems[existingCartItemIndex].quantity + 1
         };
         return { ...state, cartItems: updatedCartItems };
       } else {
-        const productToAdd = productList.find(product => product.id === productId);
+        const productToAdd = productList.find(product => product.id === productIdToAdd);
         if (productToAdd) {
-          return { ...state, cartItems: [...state.cartItems, { productId, quantity: 1, ...productToAdd }] };
+          return { ...state, cartItems: [...state.cartItems, { productId: productIdToAdd, quantity: 1, ...productToAdd }] };
         } else {
           return state;
         }
@@ -31,6 +30,12 @@ const cartReducer = (state = initialState, action) => {
         ...state,
         cartItems: state.cartItems.filter(item => item.productId !== action.payload)
       };
+    case UPDATE_QUANTITY:
+      const { productId, quantity } = action.payload;
+      const updatedCartItems = state.cartItems.map(item =>
+        item.productId === productId ? { ...item, quantity } : item
+      );
+      return { ...state, cartItems: updatedCartItems };
     case CLEAR_CART:
       return { ...state, cartItems: [] };
     default:
