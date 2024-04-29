@@ -1,5 +1,5 @@
 import React from "react";
-import { useDispatch } from 'react-redux';
+// import { useDispatch } from 'react-redux';
 import './card.css';
 import productList from './productList';
 import nav_basket from '../nav/navItems/img/nav_basket.svg';

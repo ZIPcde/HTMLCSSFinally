@@ -1,3 +1,4 @@
+// formRandomiser.jsx 2 вариант
 import React from "react";
 import productList from '../../productStore/productList.js';
 import Card from '../../productStore/card.jsx';
@@ -14,23 +15,24 @@ function getRandomIndexes(array) {
         indexes.push(randomIndex);
       }
     }
-  
+  // console.log(indexes.join(', '));
     return indexes;
   };
   const randomIndexes = getRandomIndexes(productList);
   function MyFormRandom() {
     return (
-      <form className="product_holder">
+      <div className="product_holder">
         {randomIndexes.map((index) => {
-        //   const { folder } = productList[index]; 
+          const product = productList[index]; 
   
           // Импортируем компоненты из путей, указанных в поле folder
           // const Component = Card(index);
   
-          return <Card key={index} indexout={index} />;
+          return <Card key={index} indexout={product.id} />;
+          // return <button>Добавить в корзину</button>;
         })}
         {/* <Card /> */}
-      </form>
+      </div>
     );
   }
   

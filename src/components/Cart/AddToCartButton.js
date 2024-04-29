@@ -9,7 +9,7 @@ function AddToCartButton({ productId }) {
   const handleAddToCart = () => {
     dispatch(addToCart(productId));
   };
-
+// console.log(productId);
   return (
     <button onClick={handleAddToCart}>Добавить в корзину</button>
   );
