@@ -1,28 +1,37 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { connect } from "react-redux";
 import productList from "../productStore/productList";
-import { removeFromCart, updateQuantity } from "../../actions/actions"; // добавлены импорты
+import { removeFromCart, updateQuantity } from "../../actions/actions"; 
 
 const mapStateToProps = (state) => {
-    // Получаем массив товаров из Redux-стейта
-    const { cartItems } = state.cart;
-  
-    // Преобразуем массив товаров в массив id
-    const productIds = cartItems.map(item => item.productId);
-  
-    // Получаем данные о товарах из productList.js и добавляем количество товаров
-    const products = productIds.map(productId => {
-      const product = productList.find(product => product.id === productId);
-      const quantity = cartItems.filter(item => item.productId === productId).length;
-      return { ...product, quantity };
-    });
-  
-    return {
-      products
-    };
-  };
+  const { cartItems } = state.cart;
+  const productIds = cartItems.map(item => item.productId);
+  const products = productIds.map(productId => {
+    const product = productList.find(product => product.id === productId);
+    const quantity = cartItems.filter(item => item.productId === productId).length;
+    return { ...product, quantity };
+  });
 
-function ProductCard({ product, quantity, onRemove, onUpdateQuantity }) {
+  return {
+    products
+  };
+};
+
+const handleDecreaseQuantity = (quantity, id, onUpdateQuantity, setSubTotal, subTotal, price, updateProductInfo) => {
+  if (quantity > 1) {
+    onUpdateQuantity(id, quantity - 1);
+    setSubTotal(subTotal - price);
+    updateProductInfo(id, quantity - 1, price);
+  }
+};
+
+const handleIncreaseQuantity = (id, quantity, onUpdateQuantity, setSubTotal, subTotal, price, updateProductInfo) => {
+  onUpdateQuantity(id, quantity + 1);
+  setSubTotal(subTotal + price);
+  updateProductInfo(id, quantity + 1, price);
+};
+
+const ProductCard = ({ product, quantity, onRemove, onUpdateQuantity, updateProductInfo }) => {
   const { id, folder, productName, productDiscr, color, size, price } = product;
   const [subTotal, setSubTotal] = useState(quantity * price);
 
@@ -30,17 +39,9 @@ function ProductCard({ product, quantity, onRemove, onUpdateQuantity }) {
     onRemove(id);
   };
 
-  const handleDecreaseQuantity = () => {
-    if (quantity > 1) {
-      onUpdateQuantity(id, quantity - 1);
-      setSubTotal(subTotal - price);
-    }
-  };
-
-  const handleIncreaseQuantity = () => {
-    onUpdateQuantity(id, quantity + 1);
-    setSubTotal(subTotal + price);
-  };
+  useEffect(() => {
+    setSubTotal(quantity * price);
+  }, [quantity, price]);
 
   return (
     <div className="product-card">
@@ -52,31 +53,47 @@ function ProductCard({ product, quantity, onRemove, onUpdateQuantity }) {
       <p>Price: ${price}</p>
       <p>Quantity: {quantity}</p>
       <button onClick={handleRemove}>Remove</button>
-      <button onClick={handleDecreaseQuantity}>-</button>
-      <button onClick={handleIncreaseQuantity}>+</button>
+      <button onClick={() => handleDecreaseQuantity(quantity, id, onUpdateQuantity, setSubTotal, subTotal, price, updateProductInfo)}>-</button>
+      <button onClick={() => handleIncreaseQuantity(id, quantity, onUpdateQuantity, setSubTotal, subTotal, price, updateProductInfo)}>+</button>
       <p>SUB TOTAL: ${subTotal}</p>
     </div>
   );
-}
+};
 
-function ProductCardList({ products, onRemove, onUpdateQuantity }) {
-  const grandTotal = products.reduce((total, product) => total + product.quantity * product.price, 0);
+const ProductCardList = ({ products, onRemove, onUpdateQuantity }) => {
+  const [updatedProducts, setUpdatedProducts] = useState(products);
+
+  const updateProductInfo = (productId, newQuantity, price) => {
+    const updatedProductsCopy = updatedProducts.map((product) => {
+      if (product.id === productId) {
+        return {
+          ...product,
+          quantity: newQuantity,
+        };
+      }
+      return product;
+    });
+    setUpdatedProducts(updatedProductsCopy);
+  };
+
+  const grandTotal = updatedProducts.reduce((total, product) => total + product.quantity * product.price, 0);
 
   return (
     <div className="product-holder">
-      {products.map((product, index) => (
+      {updatedProducts.map((product, index) => (
         <ProductCard
           key={index}
           product={product}
           quantity={product.quantity}
           onRemove={onRemove}
           onUpdateQuantity={onUpdateQuantity}
+          updateProductInfo={updateProductInfo}
         />
       ))}
       <p>GRAND TOTAL: ${grandTotal}</p>
     </div>
   );
-}
+};
 
 const mapDispatchToProps = (dispatch) => ({
   onRemove: (productId) => dispatch(removeFromCart(productId)),
