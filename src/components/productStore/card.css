@@ -1,0 +1,69 @@
+.card {
+width: 360px;
+height: 587px;
+top: 1576px;
+left: 230px;
+gap: 0px;
+opacity: 0px;
+margin: auto;
+}
+
+.card_img__holder {
+    /* float: left;
+    margin-right: 10px; */
+    text-align: center;
+    /* background-color: burlywood; */
+    position: relative;
+    /* display: inline-block; */
+}
+
+.card_img__img {
+    height: 420px;
+    max-width: 360px;
+    max-width: 100%;
+    object-fit: cover; /* Обрезать картинку по ширине */
+}
+
+.card_txt__holder {
+
+}
+
+.card_txt__name {
+
+}
+
+.card_txt__discr {
+
+}
+
+.card_txt__price {
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .card_img__holder:hover .overlay {
+    opacity: 1;
+  }
+
+  .card_img__addtocart {
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    border: 2px solid;
+    padding-left: 30px;
+    padding-right: 30px;
+  }

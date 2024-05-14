@@ -1,0 +1,37 @@
+.basketcontainer {
+    position: relative;
+  }
+  
+  .ellipseholder,
+  .basket2,
+  .ellipse {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .ellipseholder {
+    text-align: center;
+    height: 0px;
+    margin-top: -7px;
+    margin-left: 20px;
+    z-index: 1; /* Первая картинка будет на переднем плане */
+  }
+  
+  .basket2 {
+    z-index: 0; /* Вторая картинка будет на заднем плане */
+  }
+
+  .basketcounter {
+    position: absolute;
+    text-align: center;
+    color: white;
+    height: 0px;
+    margin-top: -16px;
+    margin-left: 2px;
+    z-index: 1; /* Первая картинка будет на переднем плане */
+  }
+
+  .ellipse {
+    z-index: 0; /* Вторая картинка будет на заднем плане */
+  }

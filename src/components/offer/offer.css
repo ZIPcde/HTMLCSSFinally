@@ -1,0 +1,184 @@
+.offerout {
+    margin-top: 40px;
+}
+
+.picks3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pict1of3 {
+    margin: 15px;
+    width: 360px;
+    height: 260px;
+    top: 904px;
+    left: 1010px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+
+.offer_wide {
+    grid-column: 1 / 2;
+    /* Занимает первый столбец */
+    grid-row: 1 / 2;
+    /* Занимает первую строку */
+    z-index: 2;
+    /* Устанавливаем z-index, чтобы текст был над изображением */
+    /* position: absolute; */
+    /* Абсолютное позиционирование относительно контейнера */
+    /* top: 50%;
+    /* Размещаем текст по вертикали по центру */
+    /* left: 50%;
+    */
+
+    position: relative;
+    z-index: 1;
+}
+
+.sp3 {
+    /* font-family: Lato;/ */
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.4px;
+    text-align: left;
+    color: #F16D7F;
+
+}
+
+.sp4 {
+    /* font-family: Lato; */
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 38.4px;
+    text-align: center;
+    color: #ffffff;
+
+}
+
+.internalpict {
+
+    display: grid;
+    place-items: center;
+    /* Центрируем содержимое контейнера */
+    /* position: relative; Устанавливаем позицию контейнера */
+    height: 300px;
+    /* Задаем высоту контейнера (замените на нужное значение) */
+    margin: 15px;
+    width: 360px;
+    height: 260px;
+    top: 904px;
+    left: 1010px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.internalpict2 {
+
+    display: grid;
+    place-items: center;
+    /* Центрируем содержимое контейнера */
+    /* position: relative; Устанавливаем позицию контейнера */
+    height: 300px;
+    /* Задаем высоту контейнера (замените на нужное значение) */
+    margin: 15px;
+    width: 1140px;
+    height: 180px;
+    top: 904px;
+    left: 1010px;
+    gap: 0px;
+    opacity: 0px;
+    z-index: 0;
+}
+
+.internalpict2::before {
+    background-image: url('#');
+    background-size: cover;
+    background-position: center;
+    grid-column: 1 / 2;
+    /* Занимает первый столбец */
+    grid-row: 1 / 2;
+    /* Занимает первую строку */
+    z-index: 1;
+    /* Устанавливаем z-index, чтобы изображение было выше текста */
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(44, 40, 40, 0.7);
+    /* Цвет и прозрачность слоя */
+}
+
+.internalpict:hover::before {
+    background-color: rgba(49, 40, 40, 0.0);
+    transition: background-color 1.2s ease;
+}
+
+.internalpict2:hover::before {
+    background-color: rgba(49, 40, 40, 0.0);
+    transition: background-color 1.2s ease;
+}
+
+.internalpict::before {
+    background-image: url('#');
+    background-size: cover;
+    background-position: center;
+    grid-column: 1 / 2;
+    /* Занимает первый столбец */
+    grid-row: 1 / 2;
+    /* Занимает первую строку */
+    z-index: 1;
+    /* Устанавливаем z-index, чтобы изображение было выше текста */
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(49, 40, 40, 0.7);
+    /* Цвет и прозрачность слоя */
+}
+
+.paragr {
+    justify-content: center;
+    grid-column: 1 / 2;
+    /* Занимает первый столбец */
+    grid-row: 1 / 2;
+    /* Занимает первую строку */
+    z-index: 2;
+
+text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.picture1 {
+    background-image: url("./img/Layer 43.png");
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Цвет и прозрачность слоя */
+}
+
+
+
+.picture2 {
+    background-image: url("./img/Layer 30.png");
+}
+
+.picture3 {
+    background-image: url("./img/Layer 44.png");
+}
+
+.picture4 {
+    background-image: url("./img/Layer 45.png");
+}
+
+.wide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

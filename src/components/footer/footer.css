@@ -1,0 +1,16 @@
+.black {
+    height: 75px;
+    width: 100%;
+    background-color: #222222;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px; /* Пример значения отступа, которое можно изменить */
+    flex-grow: 1;
+}
+
+.footer_text {
+    flex-grow: 1;
+    color: white;
+}

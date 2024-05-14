@@ -1,0 +1,29 @@
+.div_discount {
+    height: 341px;
+    display: flex;
+    background-color: #222224;
+    justify-content: center;
+    align-items: center; /* Центрирование по вертикали */
+}
+
+.div_discount__holder {
+    display: grid;
+    text-align: center;
+    align-items: center; /* Центрирование по вертикали */
+    background-color: #222224;
+    justify-content: center;
+    max-width: 360px;
+    max-height: 134px;
+
+}
+
+.delivery_text {
+    color: white;
+    font-weight: normal;
+}
+
+.delivery_text__p {
+    color: #FBFBFB;
+    font-weight: 400;
+    font-size: 14px;
+}

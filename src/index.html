@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .all {
+            margin: 0 auto;
+            max-width: 90%;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .container {
+            margin: 15px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .item__price {
+            margin-top: 10px;
+            color: red;
+            position: relative;
+            bottom: 1px;
+        }
+
+        .item__title {
+            margin-top: 15px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .item {
+            flex: 1 0 30%;
+            max-width: 360px;
+            margin: 15px;
+            text-align: center;
+            background-color: #F8F8F8;
+
+        }
+
+        .internalpict {
+
+            display: grid;
+            place-items: center;
+            /* Центрируем содержимое контейнера */
+            /* position: relative; Устанавливаем позицию контейнера */
+            height: 300px;
+            /* Задаем высоту контейнера (замените на нужное значение) */
+            margin: 15px;
+            width: 360px;
+            height: 260px;
+            top: 904px;
+            left: 1010px;
+            gap: 0px;
+            opacity: 0px;
+        }
+
+        .internalpict2 {
+
+            display: grid;
+            place-items: center;
+            /* Центрируем содержимое контейнера */
+            /* position: relative; Устанавливаем позицию контейнера */
+            height: 300px;
+            /* Задаем высоту контейнера (замените на нужное значение) */
+            margin: 15px;
+            width: 1140px;
+            height: 180px;
+            top: 904px;
+            left: 1010px;
+            gap: 0px;
+            opacity: 0px;
+        }
+
+        .internalpict2::before {
+            background-image: url('путь_к_вашему_изображению.jpg');
+            background-size: cover;
+            background-position: center;
+            grid-column: 1 / 2;
+            /* Занимает первый столбец */
+            grid-row: 1 / 2;
+            /* Занимает первую строку */
+            z-index: 1;
+            /* Устанавливаем z-index, чтобы изображение было выше текста */
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: relative;
+            z-index: 0;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Цвет и прозрачность слоя */
+        }
+
+        .internalpict::before {
+            background-image: url('путь_к_вашему_изображению.jpg');
+            background-size: cover;
+            background-position: center;
+            grid-column: 1 / 2;
+            /* Занимает первый столбец */
+            grid-row: 1 / 2;
+            /* Занимает первую строку */
+            z-index: 1;
+            /* Устанавливаем z-index, чтобы изображение было выше текста */
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: relative;
+            z-index: 0;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Цвет и прозрачность слоя */
+        }
+
+        .paragr {
+            grid-column: 1 / 2;
+            /* Занимает первый столбец */
+            grid-row: 1 / 2;
+            /* Занимает первую строку */
+            z-index: 2;
+            /* Устанавливаем z-index, чтобы текст был над изображением */
+            /* position: absolute; */
+            /* Абсолютное позиционирование относительно контейнера */
+            /* top: 50%;
+            /* Размещаем текст по вертикали по центру */
+            /* left: 50%;
+            */
+
+            position: relative;
+            z-index: 1;
+        }
+
+        .picture1 {
+            background-image: url("./img/Layer 43.png");
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Цвет и прозрачность слоя */
+        }
+
+
+
+        .picture2 {
+            background-image: url("https://s3-alpha-sig.figma.com/img/5e1c/ce8a/30bbaf0d03819cf59e8f2ddc4d9976f4?Expires=1711929600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=g6KIZpMHIEWU2vSHtpKW5AHNE269qfVP12KoFx5oCSQLcT6zTcBAXvUaCKpuOKLD-MGw6ZQrCDr0cJaYEgLKXPwBC0cxJMkMioJsxejzMfFE38XA9of4CT-pI~6CukvFKHVexM~zrqAPO5Yk5W0pVMrbhFGRVXXYhQOAXaEsxsQjqG8WbAO0DvZ1z1xavIrvWWm5-mwxgmMC18qyml-4Ai0IIH2oVRns1q1ay~XKkFZ3L3aKxtpbDaictOj-ntfncdq8aRmMcna4-qzsIHcCaQsA0hXCi0dqahHZLlW3-gkQHeAQ6u1qhSK--EWEf3oDaCVl1YAGhmDcnJSjcvWwtg__");
+        }
+
+        .picture3 {
+            background-image: url("https://s3-alpha-sig.figma.com/img/b60e/aaaf/01fd214c743c0be2a2f04496d141625d?Expires=1711929600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=EUj9vzqX9g-i7luE8I7uhe0cCk2pnF3uDjXpHcMyTkGawJkC6zaIcNZe4x~TpYrGrb33UPgSnciEdFIZHwrGf37yjVZ1IAY4bljyhtqM5AB1mR2rYxxYG7n1CI70mZ9c0L5ENUoAo49af4WJ0e9go-rn9rrdvthOfT9XS~78wLwLVfLUi4huO5K8zRlWTFbKQUK5nfuS-W4s-1pD9uIwNp4o0jGp9OQ5bJ9lUaJQPrRgzNn0qXT2vPU2Xh~S7Y1oESWXMhrhvExerwzWTrshuqCDLPk5mxDjB~Iv6FPuf9dkPPizo~64DfRAb0wwsE9H5l~V2fnIVislC8lc0DOjgQ__");
+        }
+
+        .picture4 {
+            background-image: url("https://s3-alpha-sig.figma.com/img/079e/53f2/3b15f1165d04e925564d94a376003eb0?Expires=1711929600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NtOMP8hRhUiIE~HJ~b52yGm0CHx~QyigTu5MR~o2W0LRjJdZIjDe26wQptXXEV4vEbui4RikPceJ8TLL6Gfid5rI05~iJl9~BdhcEMV0I7WCrldzQ7GgguEieTfZ~dESPMNJjnVVlTiKjM65UfhAZ~fmpF6KbKXQmgzcCj24f7J1Dp7EYjC7ViWlDa9DSEsKgvhoJXea45V5s-r2M8plEGq-8jQ6H6bvyXZfMCYBiBf3p2acXCGsrbKuvmk0t6s-bfXaVyGLhs71GEOEdJ1cN9SVCxqT9EFulfOLxCj3wjEhdGEton7x4uFGVGj4QSpZj1r4ypezbU3-GvdW40pmTA__");
+        }
+
+        .item__desc {
+            text-align: left;
+            width: 360px;
+            overflow: hidden;
+        }
+
+        .black {
+            height: 75px;
+            width: 100%;
+            background-color: #222222;
+        }
+
+        .black2 {
+            height: 341px;
+            width: 100%;
+            background-color: #222222;
+        }
+
+        .item__img {
+            max-width: 360px;
+            height: 420px;
+            object-fit: cover;
+
+        }
+
+        .h1up {
+            margin-top: 50px;
+            font-family: Lato;
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 36px;
+            text-align: left;
+
+            text-align: center;
+
+        }
+
+        .h3up {
+            text-align: center;
+
+        }
+
+        .pinkbg {
+            display: flex;
+            background-color: #F1E4E6;
+        }
+
+        .sp1 {
+            margin: 0;
+            margin-left: 10px;
+            font-family: Lato;
+            font-size: 48px;
+            font-weight: 900;
+            line-height: 57.6px;
+            text-align: left;
+
+        }
+
+        .sp2 {
+            margin-left: 10px;
+            font-family: Lato;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 38.4px;
+            text-align: left;
+
+        }
+
+        .sp3 {
+            font-family: Lato;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 38.4px;
+            text-align: left;
+            color: #F16D7F;
+
+        }
+
+        .sp4 {
+            font-family: Lato;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 38.4px;
+            text-align: left;
+            color: #ffffff;
+
+        }
+
+        .text2 {
+            display: table-cell;
+            vertical-align: middle;
+            width: 477px;
+            height: 93px;
+            top: 365px;
+            left: 892px;
+            gap: 0px;
+            opacity: 0px;
+
+        }
+
+        .picks3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .pict1of3 {
+            margin: 15px;
+            width: 360px;
+            height: 260px;
+            top: 904px;
+            left: 1010px;
+            gap: 0px;
+            opacity: 0px;
+
+        }
+
+        .wide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .rectangle {
+            margin-top: 15px;
+            width: 12px;
+            height: 92px;
+            top: 364.9px;
+            left: 864px;
+            gap: 0px;
+            opacity: 0px;
+            background: #F16D7F;
+
+        }
+
+        .black2 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .divdeliv {
+            width: 360;
+            height: 134;
+            margin: 70px;
+            justify-content: center;
+        }
+
+        .spdel1 {
+            color: #FBFBFB;
+            font-family: Lato;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 38.4px;
+            text-align: center;
+        }
+
+        .svg001 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .spdel2 {
+            font-family: Lato;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 38.4px;
+            text-align: center;
+            color: #FBFBFB;
+        }
+
+        .divbtndown {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .cartitemsdiv {
+            display: grid;
+            grid-template-columns: 1fr;
+            /* Один столбец занимает всю доступную ширину */
+        }
+
+        .divcards {
+            display: flex;
+            border: solid black;
+            max-width: 1000px;
+        }
+
+        .newxdiv {
+            max-height: 80px;
+        }
+
+        .divItemDiscCard {
+            min-width: 200px;
+        }
+
+        .imgprod {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .divimg {
+            min-width: 520px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .btndown {
+            background-color: #ffffff;
+            /* Красная заливка */
+            color: rgb(255, 0, 0);
+            /* Белый шрифт */
+            border: 2px solid #f44336;
+            /* Красная обводка */
+            padding: 10px;
+            /* Размер отступа */
+            font-size: 30%;
+            /* Размер шрифта, занимающий 30% от размера кнопки */
+            transform: scale(2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="all">
+
+
+        <div class="nav">
+            <div class="black">
+                <!-- <div class="leftbuttons">
+                <img src="https://s3-alpha-sig.figma.com/img/e0e1/4332/7529d10b27998f97cf0072a2745c1bcd?Expires=1711929600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=VCSSgGLYsirPamDjRVmsjL0f4XGEmDuaa1kTiPLO6zhxmMiXz6v6r2hSP3QJqwEkHm73uQCeEzLhic8C~SLdevcOpGFt6oTdeYTRwpYxy9x-UI1yW3hrwk9T34Dr3F7CkhxHLjzzwHPpJWMmh~kmkZ4jJWtEEOq~BR~GJuG4XM2y~bBFrBD5bO9KIJa~qXsxVmtCv7HdX3Cfk-tndoSazAln4Iknd~oYImNj6DCgrMgpEvQT3WkbdTSghCMx5HhWHJPn-fBzW6odEf2-bjT1ZUU1s--7TBYXDhrb-RUkDzSSBJxoYv9dRB4lUy2ludEuPdmDejCo8D8Zn8EP5BuDiQ__"
+                    alt="bbb">
+                <img src="" alt="">
+            </div> -->
+            </div>
+            <div class="pinkbg">
+                <img src="https://s3-alpha-sig.figma.com/img/9716/1631/e557ec4d2a67db0f9c797192791eecd6?Expires=1711929600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pRQyKGTulCZH5dCPKmkmmsMgg63N4RIHt5oAyv1qk75OLfh0AGceiMEmnIB5ZbbYgfbH2DyToo9NtmJ4jm2w~dJKA0iX-2VRWwdCUjOjWbC~XWU1~9nr-D0x2itDfWsjP3HU7Q5s~soBfs~iOFnKs1mUa~Ixq86HcdV9ED8pg0ac34f75fM~MUKtHSZVMV-vGPPjwlqvfjzcByw56wdqG1HKBnwEH7GhWWSYzwQQFbuUPN6FF2esOHRyenrYdN3j7B1L~l4q~0uKtsyvtECWOAl81zPRyP29SnE1DyYFzwWDMoYvOkcVJ5PPQyzP4NQSCXI1A7lOvGz5N7lX7arAiw__"
+                    alt="firstman">
+                <div class="text">
+                    <div class="rectangle"></div>
+                    <div class="text2">
+                        <p><span class="sp1">THE BRAND </span><br><span class="sp2">OF LUXERIOUS </span><span
+                                class="sp3">FASHION</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="offerout">
+                <div class="offer">
+                    <div class="picks3">
+                        <div class="1of3">
+                            <div class="internalpict picture1">
+                                <p class="ppp"><span class="sp4"> 30% OFF </span><br><span class="sp3">FOR WOMEN</span>
+                                </p>
+                                <!-- <img class="pict1of3 "
+                                    src="https://s3-alpha-sig.figma.com/img/d8ec/b493/c297045fdb674d29faad0e2219a12ffb?Expires=1711929600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=i9d9kC0Bo~gRUGCcSg15FYO9srBuX4MCfch-tRTeeJ5TRW8qYYP~AypOZH6jssQnMF~yMZThRe4lOWaCCrFOA3KYz2gjLTGju7faMlKeXEI9Q~W4n86HFFHr7ZuGnweEvnWs9V0K6rp3CBQxhipEGYpNOHJJ30FOEBvREdf6R6S4d~yIz7IH3Si-RMycCigyteGbGHT~boj2QDvaejyAF8VtUtveDf8BVhmkyebuovMPDO59VT8qieR1FP8sZhnq-3Rmrt8xqADv-5F-OOKyNm6mQt5fmKKULCeXcqJPw9JJmIl691o44ME12m-aK5XCzIDp1WoZdVw4qnc1q6V2uw__"
+                                    alt="forwomen"> -->
+                            </div>
+                        </div>
+                        <div class="1of3">
+                            <div class="internalpict picture2">
+                                <p class="ppp"><span class="sp4">HOT DEAL
+                                    </span><br><span class="sp3"><span> </span> FOR MEN</span></p>
+                                <!-- <img class="pict1of3 "
+                                    src="https://s3-alpha-sig.figma.com/img/5e1c/ce8a/30bbaf0d03819cf59e8f2ddc4d9976f4?Expires=1711929600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=g6KIZpMHIEWU2vSHtpKW5AHNE269qfVP12KoFx5oCSQLcT6zTcBAXvUaCKpuOKLD-MGw6ZQrCDr0cJaYEgLKXPwBC0cxJMkMioJsxejzMfFE38XA9of4CT-pI~6CukvFKHVexM~zrqAPO5Yk5W0pVMrbhFGRVXXYhQOAXaEsxsQjqG8WbAO0DvZ1z1xavIrvWWm5-mwxgmMC18qyml-4Ai0IIH2oVRns1q1ay~XKkFZ3L3aKxtpbDaictOj-ntfncdq8aRmMcna4-qzsIHcCaQsA0hXCi0dqahHZLlW3-gkQHeAQ6u1qhSK--EWEf3oDaCVl1YAGhmDcnJSjcvWwtg__"
+                                    alt="formen"> -->
+                            </div>
+                        </div>
+                        <div class="1of3">
+                            <div class="internalpict picture3">
+                                <p class="ppp"><span class="sp4">NEW ARRIVALS
+                                    </span><br><span class="sp3">FOR KIDS</span></p>
+                                <!-- <img class="pict1of3 "
+                                    src="https://s3-alpha-sig.figma.com/img/b60e/aaaf/01fd214c743c0be2a2f04496d141625d?Expires=1711929600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=EUj9vzqX9g-i7luE8I7uhe0cCk2pnF3uDjXpHcMyTkGawJkC6zaIcNZe4x~TpYrGrb33UPgSnciEdFIZHwrGf37yjVZ1IAY4bljyhtqM5AB1mR2rYxxYG7n1CI70mZ9c0L5ENUoAo49af4WJ0e9go-rn9rrdvthOfT9XS~78wLwLVfLUi4huO5K8zRlWTFbKQUK5nfuS-W4s-1pD9uIwNp4o0jGp9OQ5bJ9lUaJQPrRgzNn0qXT2vPU2Xh~S7Y1oESWXMhrhvExerwzWTrshuqCDLPk5mxDjB~Iv6FPuf9dkPPizo~64DfRAb0wwsE9H5l~V2fnIVislC8lc0DOjgQ__"
+                                    alt="forkids"> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wide">
+                        <div class="internalpict2 picture4">
+                            <p class="ppp"><span class="sp4">LUXIROUS & TRENDY
+                                </span><br><span class="sp3">ACCESORIES</span></p>
+                            <!-- <img src="https://s3-alpha-sig.figma.com/img/079e/53f2/3b15f1165d04e925564d94a376003eb0?Expires=1711929600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NtOMP8hRhUiIE~HJ~b52yGm0CHx~QyigTu5MR~o2W0LRjJdZIjDe26wQptXXEV4vEbui4RikPceJ8TLL6Gfid5rI05~iJl9~BdhcEMV0I7WCrldzQ7GgguEieTfZ~dESPMNJjnVVlTiKjM65UfhAZ~fmpF6KbKXQmgzcCj24f7J1Dp7EYjC7ViWlDa9DSEsKgvhoJXea45V5s-r2M8plEGq-8jQ6H6bvyXZfMCYBiBf3p2acXCGsrbKuvmk0t6s-bfXaVyGLhs71GEOEdJ1cN9SVCxqT9EFulfOLxCj3wjEhdGEton7x4uFGVGj4QSpZj1r4ypezbU3-GvdW40pmTA__"
+                                alt="wide"> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2 class="h1up">Fetured Items</h1>
+                <h3 class="h3up">Shop for items based on what we featured in this week</h3>
+            </div>
+            <div class="container">
+            </div>
+            <template id="news__template">
+                <div class="item">
+                    <img class="item__img" src="" alt="" />
+                    <div class="item__desc">
+                        <div class="item__title">
+
+                        </div>
+                        <div class="item__discription"><br>discription: </div>
+                        <div class="item__translate"><br>translate: </div>
+                        <div class="item__price">
+                            Price (rub): <span class="item__price-red"></span>
+                        </div>
+                        <div class="basket">
+                            <button type="button">В корзину
+                                <img src="https://cdn-icons-png.flaticon.com/128/40/40368.png" alt="busc" width="60"
+                                    height="60">
+                            </button>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </template>
+        <div class="divbtndown">
+            <button class="btndown">Browse All Product</button>
+        </div>
+    </div>
+    <div class="delivery">
+        <div class="black2">
+            <div class="divdeliv divdel1">
+                <div class="svg001">
+                    <img src="Truck.svg" alt="svg">
+                </div>
+                <div>
+                    <p class="spdel1">Free Delivery</p>
+                </div>
+                <div>
+                    <p class="spdel2">Worldwide delivery on all.
+                        Authorit
+                        tively morph next-generation
+                        innov tion with extensive models.</p>
+                </div>
+            </div>
+            <div class="divdeliv divdel2">
+                <div class="svg001">
+                    <img src="perc.svg" alt="svg">
+                </div>
+                <div>
+                    <p class="spdel1">Sales & discounts</p>
+                </div>
+                <div>
+                    <p class="spdel2">Worldwide delivery on all.
+                        Authorit
+                        tively morph next-generation
+                        innov tion with extensive models.</p>
+                </div>
+                <p><span class="spdel1"></span><br><span class="spdel2"></span></p>
+            </div>
+            <div class="divdeliv divdel3">
+                <div class="svg001">
+                    <img src="crown.svg" alt="svg">
+                </div>
+                <div>
+                    <p class="spdel1">Quality assurance</p>
+                </div>
+                <div>
+                    <p class="spdel2">Worldwide delivery on all.
+                        Authorit
+                        tively morph next-generation
+                        innov tion with extensive models.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cartitemsdiv">
+    </div>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

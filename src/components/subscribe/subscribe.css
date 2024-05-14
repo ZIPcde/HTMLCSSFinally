@@ -1,0 +1,141 @@
+.subscribe_div__holder {
+    height: 448px;
+    background-image: url("./img/Layer 41.png");
+    background-size: 110% auto;
+    background-repeat: no-repeat;
+    background-position: left -50px top -250px;;
+    display: flex;
+    align-items: center;
+    /* opacity: 0.5; */
+    justify-content: center;
+    /* z-index: -2; */
+    /* background-color: rgba(255, 255, 255, 0.5); */
+}
+
+.subscribe_div__internalholder {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    opacity: 1.0;
+    justify-content: center;
+}
+
+.subscribe_div__holder::before {
+    content: '';
+    /* position: absolute; */
+    background-image: url("./img/Layer 41.png");
+    opacity: 0.5; /* Прозрачность фона */
+    z-index: -1; /* Помещаем псевдоэлемент под другие элементы */
+}
+
+.subscribe_div__pict {
+    width: 360px;
+    height: 225px;
+    z-index: 1;
+}
+
+.subscribe_div__email {
+    text-align: center;
+    width: 557px;
+    height: 142px;
+    z-index: 1;
+}
+
+.subscribe_pict__holder {
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    max-width: 96px;
+    max-height: 96px;
+    overflow: hidden; 
+}
+
+.subscribe_pict__picture {
+    height: 120px;
+    transform: translateY(5%) scale(1.2);;
+}
+
+.subscribe_pict__frameholder {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.subscribe_pict__frameholder1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.subscribe_pict__discr {
+    max-width: 290px;
+    text-align: center;
+}
+
+.subscribe_pict__discrholder {
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+}
+
+.subscribe_pict__textholder {
+    display: grid;
+    justify-content: center;
+    z-index: 0;
+}
+
+.subscribe_pict__textholder p {
+    margin: 1px;
+    font-size: 20px;
+    display: grid;
+    justify-content: center;
+    z-index: 0;
+}
+
+.subscribe_input__email {
+    height: 40px;
+    margin-left: 19px;
+    width: 220px;
+    border: none;
+    background-color: none;
+    background: none;
+}
+
+.subscribe_input__btn {
+    margin-left: 10px;
+    height: 45px;
+    width: 100px;
+    background-color: none;
+    background: none;
+    color: #FFFFFF;
+    border: none;
+}
+
+.subscribe_input__frame2 {
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+
+.subscribe_input__frame {
+   
+    display: flex;
+    align-items: center;
+    width: 356px;
+    height: 80px;
+    /* border-top-right-radius: 150px 50px;
+    border-top-left-radius: 150px 50px;
+    border-bottom-right-radius: 150px 50px;
+    border-bottom-left-radius: 150px 50px;
+    overflow: hidden;  */
+}
+
+.subscribe_input__centering {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
