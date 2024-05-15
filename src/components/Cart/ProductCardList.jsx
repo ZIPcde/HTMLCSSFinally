@@ -8,7 +8,8 @@ const mapStateToProps = (state) => {
   const productIds = cartItems.map(item => item.productId);
   const products = productIds.map(productId => {
     const product = productList.find(product => product.id === productId);
-    const quantity = cartItems.filter(item => item.productId === productId).length;
+    const quantity = cartItems.find(item => item.productId === productId).quantity;
+    // const quantity = cartItems.filter(item => item.productId === productId).length;
     return { ...product, quantity };
   });
 
