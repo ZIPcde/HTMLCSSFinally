@@ -15,7 +15,7 @@ function CartControls() {
   };
 
   return (
-    <div>
+    <div className='btn_cart-clear-continue'>
       <button onClick={handleClearCart}>CLEAR SHOPPING CART</button>
       <button onClick={handleContinueShopping}>CONTINUE SHOPPING</button>
     </div>

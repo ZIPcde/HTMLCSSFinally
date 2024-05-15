@@ -1,6 +1,6 @@
 import React from 'react';
 import Nav from '../nav/nav';
-import CartControls from './CartControls';
+// import CartControls from './CartControls';
 import ProductCardList from './ProductCardList';
 
 
@@ -20,8 +20,8 @@ function Catalog() {
         {/* <Offer /> */}
         {/* <ProductList /> */}
         <ProductCardList />
-        <CartControls />
-        <Discount />
+        {/* <CartControls /> */}
+        {/* <Discount /> */}
         <Subscribe />
         <Footer />
       </div>

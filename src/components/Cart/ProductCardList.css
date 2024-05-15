@@ -1,0 +1,123 @@
+.product-card {
+    display: flex;
+    height: 306px;
+    width: 652px;
+    margin-top: 40px;
+    box-shadow: 15px 15px 20px #bbbbbb;
+}
+
+.card_img-holder-cutter {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 262px;
+    overflow: hidden;
+}
+
+.card_img {
+    height: 100%;
+}
+
+.card_info-holder {
+    margin-left: 31px;
+}
+
+.btn_cart-clear-continue {
+    margin-top: 72px;
+    margin-bottom: 128px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 652px;
+}
+
+
+.btn_cart-clear-continue button {
+    width: 225px;
+    height: 50px;
+    background-color: white;
+    border: #a4a4a4a4 solid 1px;
+}
+
+.cart_form {
+    height: 543px;
+    margin-left: 128px;
+    margin-bottom: 50px;
+}
+
+.cart_shippingadress {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart_shippingadress form{
+    display: flex;
+    flex-direction: column;
+}
+
+.cart_shippingadress form input{
+    border: solid 1px #A4A4A4;
+    margin: 20px 0 0px 0;
+    width: 360px;
+    padding-left: 17px;
+    height: 45px;
+}
+
+.cart_shippingadress form button {
+    margin: 20px 0 0px 0;
+    border: solid 1px #A4A4A4;
+    background-color: white;
+    width: 102px;
+    font-size: 11px;
+    height: 35px;
+}
+
+.cart_shippingadress {
+    width: 360px;
+    height: 272px;
+    margin-bottom: 120px;
+}
+
+.cart_total__holder {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    height: 214px;
+    margin-top: 57px;
+    background-color: #F5F3F3;
+}
+
+.cart_total__p-holder {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 360px;
+    height: 107px;
+}
+
+.cart_total__p-holder p {
+    margin-right: 34px;
+}
+
+.line {
+    width: 275px;
+    height: 1px;
+    background-color: #E2E2E2;
+}
+
+.cart_total__btn-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 360px;
+    height: 107px;
+}
+
+.cart_total__btn-holder button{
+    width: 273px;
+    height: 50px;
+
+    background-color: #F16D7F;
+    color: #FFFFFF;
+    border: none;
+}
+

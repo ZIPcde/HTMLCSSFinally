@@ -16,13 +16,13 @@ function ProductList() {
 
   return (
     <div className="product_holder next-element">
-      {cartItems.length === 0 ? (
-        <div className="empty_cart">Корзина пуста</div>
-      ) : (
-        productsToDisplay.map((product, index) => (
-          <Card key={index} indexout={product.id} />
-        ))
-      )}
+        {cartItems.length === 0 ? (
+          <div className="empty_cart">Корзина пуста</div>
+        ) : (
+          productsToDisplay.map((product, index) => (
+            <Card key={index} indexout={product.id} />
+          ))
+        )}
     </div>
   );
 }
