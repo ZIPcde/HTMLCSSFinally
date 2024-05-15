@@ -4,7 +4,7 @@ import firstMan from "./img/firstMan.png";
 
 const Header = () => {
     return (
-        <header className="pinkbg">
+        <header className="pinkbg next-element">
             <div className="div_header">
                 <img src={firstMan} alt="firstMan" />
                 <div className="text">

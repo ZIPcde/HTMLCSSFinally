@@ -5,7 +5,7 @@ import Items from "./navItems/navItem";
 // import Ofis from '../../../src/picts/ofis.png';
 const Nav = () => {
     return(
-    <nav className="black">
+    <nav className="black top-menu">
         <Items />
     </nav>
     );

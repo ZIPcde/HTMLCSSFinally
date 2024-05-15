@@ -6,10 +6,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px; /* Пример значения отступа, которое можно изменить */
+}
+
+.top-menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+  }
+
+.next-element {
+    margin-top: 75px;
 }
 
 .navflex {
+    max-width: 1140px;
     width: 70%;
     display: flex;
     flex-direction: row;
@@ -27,6 +38,11 @@
     text-align: center;
 }
 
+.peaces1 * {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
 .peaces2 {
     width: 15%;
     display: flex;
@@ -34,4 +50,9 @@
     justify-content: space-between;
     align-items: center;
     text-align: center;
+}
+
+.peaces2 *:not(.basketcontainer *) {
+    margin-left: 4px;
+    margin-right: 4px;
 }

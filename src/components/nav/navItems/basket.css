@@ -15,23 +15,29 @@
     height: 0px;
     margin-top: -7px;
     margin-left: 20px;
-    z-index: 1; /* Первая картинка будет на переднем плане */
+    z-index: 1; 
   }
   
   .basket2 {
-    z-index: 0; /* Вторая картинка будет на заднем плане */
+    z-index: 0; 
   }
 
   .basketcounter {
+    display: flex;
+    width: 30px;
+    justify-content: center;
     position: absolute;
-    text-align: center;
     color: white;
-    height: 0px;
-    margin-top: -16px;
-    margin-left: 2px;
-    z-index: 1; /* Первая картинка будет на переднем плане */
+    /* height: 0px; */
+    margin-top: -10.5px;
+    margin-left: -6px;
+    z-index: 1; 
+  }
+
+  .basketcounter-p {
+    font-size: 12px;
   }
 
   .ellipse {
-    z-index: 0; /* Вторая картинка будет на заднем плане */
+    z-index: 0; 
   }

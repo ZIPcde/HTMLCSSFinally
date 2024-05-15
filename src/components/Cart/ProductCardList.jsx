@@ -79,7 +79,7 @@ const ProductCardList = ({ products, onRemove, onUpdateQuantity }) => {
   const grandTotal = updatedProducts.reduce((total, product) => total + product.quantity * product.price, 0);
 
   return (
-    <div className="product-holder">
+    <div className="product-holder  next-element">
       {updatedProducts.map((product, index) => (
         <ProductCard
           key={index}

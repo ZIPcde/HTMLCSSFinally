@@ -1,6 +1,6 @@
 import React from 'react';
 import Nav from '../nav/nav';
-// import Header from './header/header';
+import Header from './header/header';
 // import Offer from '../offer/offer';
 import Products from './products/products';
 import Discount from '../discount/discount';
@@ -11,7 +11,7 @@ function Catalog() {
     return (
       <div className="App">
         <Nav />
-        {/* <Header /> */}
+        <Header />
         {/* <Offer /> */}
         <Products />
         <Discount />

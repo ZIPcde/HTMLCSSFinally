@@ -4,7 +4,7 @@ import Items from "./footerItems/footerItem";
 
 const Footer = () => {
     return(
-    <footer className="black">
+    <footer className="footer_black">
         <div className='footer_text'>© 2022  Brand  All Rights Reserved.</div>
         <Items />
     </footer>

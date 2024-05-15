@@ -15,7 +15,7 @@ function ProductList() {
   const productsToDisplay = productList.filter(product => productIdsInCart.includes(product.id));
 
   return (
-    <div className="product_holder">
+    <div className="product_holder next-element">
       {cartItems.length === 0 ? (
         <div className="empty_cart">Корзина пуста</div>
       ) : (

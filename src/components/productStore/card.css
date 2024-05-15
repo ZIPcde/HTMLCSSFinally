@@ -61,9 +61,14 @@ margin: auto;
 
   .card_img__addtocart {
     display: flex;
-    justify-content: space-between;
-    width: 120px;
+    justify-content: space-around;
+    align-items: center;
+    width: 140px;
     border: 2px solid;
-    padding-left: 30px;
-    padding-right: 30px;
+    /* padding-left: 30px;
+    padding-right: 30px; */
+  }
+
+  .AddToCartButton_clickable {
+    
   }

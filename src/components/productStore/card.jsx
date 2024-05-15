@@ -2,7 +2,7 @@ import React from "react";
 // import { useDispatch } from 'react-redux';
 import './card.css';
 import productList from './productList';
-import nav_basket from '../nav/navItems/img/nav_basket.svg';
+// import nav_basket from '../nav/navItems/img/nav_basket.svg';
 import AddToCartButton from '../Cart/AddToCartButton';
 
 const Card = (props) => {
@@ -13,13 +13,13 @@ const Card = (props) => {
             <div className="card_img__holder" style={{ backgroundColor: productList[props.indexout].backgroundColor }}>
                 <img className="card_img__img" src={require(`./${folder}`)} alt="img" />
                 <div className="overlay">
-                    <div className="card_img__addtocart">
+                    {/* <div className="card_img__addtocart"> */}
                         <AddToCartButton productId={props.indexout} />
-                        <img className="basket" src={nav_basket} alt="nav_basket.svg" />
+                        {/* <img className="basket" src={nav_basket} alt="nav_basket.svg" />
                         <div>
                             <p>Add to cart</p>
-                        </div>
-                    </div>
+                        </div> */}
+                    {/* </div> */}
                 </div>
             </div>
             <div className="card_txt__holder">

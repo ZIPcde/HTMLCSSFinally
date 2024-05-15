@@ -10,7 +10,7 @@ const Basket = () => {
   return (
     <div className="basketcontainer">
       <div className="ellipseholder">
-      <div className="basketcounter"><p>{totalItems}</p></div>
+      <div className="basketcounter"><p className="basketcounter-p">{totalItems}</p></div>
       <img className="ellipse" src={nav_Ellipse} alt="nav_Ellipse.svg" />
       </div>
       <Link to="/">

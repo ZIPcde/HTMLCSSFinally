@@ -6,7 +6,7 @@ const productList = [
         ptoductDiscr: 'Синяя болоньевая куртка для бородатых длинноволосых моделей с рюкзаками. Не носить без рюкзака!!!',
         color: "Blue",
         size: "S",
-        price: 100,
+        price: 70,
         backgroundColor: "none",
         gender: 'man'
     }, 
@@ -17,7 +17,7 @@ const productList = [
         ptoductDiscr: 'Белая футболка. В комплекте идет рандомная кепка, ни коим образом не сочетающаяся с футболкой.',
         color: "White",
         size: "L",
-        price: 100,
+        price: 80,
         backgroundColor: "#F3EDED",
         gender: 'man'
     },
@@ -28,7 +28,7 @@ const productList = [
         ptoductDiscr: 'Красная рубашка.',
         color: "White",
         size: "S",
-        price: 100,
+        price: 92,
         backgroundColor: "#F7E4E2",
         gender: 'man'
     },
@@ -39,7 +39,7 @@ const productList = [
         ptoductDiscr: 'Белая рубашка, идеально подходящая для тех, кто любит проливать кофе.',
         color: "White",
         size: "XL",
-        price: 100,
+        price: 63,
         backgroundColor: "#F3EDED",
         gender: 'man'
     },
@@ -50,7 +50,7 @@ const productList = [
         ptoductDiscr: 'Белая куртка, которая мгновенно превращает вас в героя детективного сериала.',
         color: "White",
         size: "M",
-        price: 100,
+        price: 115,
         backgroundColor: "#F3EDED",
         gender: 'man'
     },
@@ -60,8 +60,8 @@ const productList = [
         productName: 'Leather Jacket',
         ptoductDiscr: 'Кожаная куртка, создающая иллюзию, что вы только что слезли с мотоцикла.',
         color: "White",
-        size: "XS",
-        price: 100,
+        size: "XL",
+        price: 57,
         backgroundColor: "#F3EDED",
         gender: 'man'
     },
@@ -72,7 +72,7 @@ const productList = [
         ptoductDiscr: 'Колготки, которые заставят вас чувствовать себя супергероем.',
         color: "White",
         size: "M",
-        price: 100,
+        price: 39,
         backgroundColor: "none",
         gender: 'woman'
     },
@@ -83,7 +83,7 @@ const productList = [
         ptoductDiscr: 'Зеленая рубашка, идеальная для тех, кто хочет сливаться с природой.',
         color: "White",
         size: "L",
-        price: 100,
+        price: 89,
         backgroundColor: "#F3EDED",
         gender: 'man'
     },
@@ -93,8 +93,8 @@ const productList = [
         productName: 'Blue jacket',
         ptoductDiscr: 'Синяя кофта, которая заставит вас чувствовать себя как в фильме "Титаник".',
         color: "White",
-        size: "XS",
-        price: 100,
+        size: "XL",
+        price: 79,
         backgroundColor: "#F3EEEF",
         gender: 'man'
     },
@@ -105,7 +105,7 @@ const productList = [
         ptoductDiscr: 'Черный костюм, который мгновенно превращает вас в агента "Мен in Black".',
         color: "White",
         size: "L",
-        price: 100,
+        price: 199,
         backgroundColor: "#F7E4E2",
         gender: 'woman'
     },
@@ -116,7 +116,7 @@ const productList = [
         ptoductDiscr: 'Желтые брюки, которые заставят вас выглядеть как главный герой мультфильма.',
         color: "White",
         size: "L",
-        price: 100,
+        price: 77,
         backgroundColor: "#F3EEEF",
         gender: 'man'
     },
@@ -127,7 +127,7 @@ const productList = [
         ptoductDiscr: 'Синий пиджак, который заставит вас чувствовать себя как в фильме "Титаник".',
         color: "White",
         size: "M",
-        price: 100,
+        price: 71,
         backgroundColor: "#F3EDED",
         gender: 'woman'
     },
@@ -138,7 +138,7 @@ const productList = [
         ptoductDiscr: 'Полосатая рубашка, которая заставит вас чувствовать себя как пират.',
         color: "White",
         size: "S",
-        price: 100,
+        price: 49,
         backgroundColor: "#F3EDED",
         gender: 'woman'
     },
