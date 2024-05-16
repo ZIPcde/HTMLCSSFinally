@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from "react";
+import { useSelector, useDispatch } from 'react-redux';
 import { connect } from "react-redux";
 import productList from "../productStore/productList";
 import { removeFromCart, updateQuantity } from "../../actions/actions";
 import CartControls from './CartControls'; 
 import "./ProductCardList.css";
+
+
+
 
 const mapStateToProps = (state) => {
   const { cartItems } = state.cart;
@@ -48,20 +52,25 @@ const ProductCard = ({ product, quantity, onRemove, onUpdateQuantity, updateProd
   }, [quantity, price]);
 
   return (
-    <div className="product-card">
+    <div className="product-card forcheck" data-value={id}>
       <div className="card_img-holder-cutter" style={{ backgroundColor }}>
       <img className="card_img" src={require(`../productStore/${folder}`)} alt={productName} />
       </div>
       <div className="card_info-holder">
       <h3>{productName}</h3>
       <p>{productDiscr}</p>
+      <p>Price: ${price}</p>
       <p>Color: {color}</p>
       <p>Size: {size}</p>
-      <p>Price: ${price}</p>
+      <div className="quantity-holder">
       <p>Quantity: {quantity}</p>
-      <button onClick={handleRemove}>Remove</button>
-      <button onClick={() => handleDecreaseQuantity(quantity, id, onUpdateQuantity, setSubTotal, subTotal, price, updateProductInfo)}>-</button>
+<div className="plus-minus-holder">
       <button onClick={() => handleIncreaseQuantity(id, quantity, onUpdateQuantity, setSubTotal, subTotal, price, updateProductInfo)}>+</button>
+<button onClick={() => handleDecreaseQuantity(quantity, id, onUpdateQuantity, setSubTotal, subTotal, price, updateProductInfo)}>-</button>
+</div>
+      </div>
+      <button onClick={handleRemove}>Remove</button>
+      
       <p>SUB TOTAL: ${subTotal}</p>
       </div>
     </div>
@@ -71,6 +80,10 @@ const ProductCard = ({ product, quantity, onRemove, onUpdateQuantity, updateProd
 const ProductCardList = ({ products, onRemove, onUpdateQuantity }) => {
   const [updatedProducts, setUpdatedProducts] = useState(products);
 
+  // 
+  const cartItems = useSelector(state => state.cart.cartItems); // Получение массива cartItems из Redux store
+  const dispatch = useDispatch();
+  // 
   const updateProductInfo = (productId, newQuantity, price) => {
     const updatedProductsCopy = updatedProducts.map((product) => {
       if (product.id === productId) {
@@ -83,6 +96,20 @@ const ProductCardList = ({ products, onRemove, onUpdateQuantity }) => {
     });
     setUpdatedProducts(updatedProductsCopy);
   };
+
+// 
+useEffect(() => {
+  const elementsForCheck = document.querySelectorAll('.forcheck'); // Поиск всех элементов с классом forcheck
+  elementsForCheck.forEach(element => {
+    const dataValue = parseInt(element.getAttribute('data-value')); // Получение числового значения из атрибута data-value
+    const itemExists = cartItems.some(item => item.id === dataValue); // Проверка наличия объекта с соответствующим id в cartItems
+    if (!itemExists) {
+      element.remove(); // Удаление элемента из DOM, если объекта нет в cartItems
+    }
+  });
+}, [cartItems]);
+
+// 
 
   const grandTotal = updatedProducts.reduce((total, product) => total + product.quantity * product.price, 0);
 
@@ -124,6 +151,8 @@ const ProductCardList = ({ products, onRemove, onUpdateQuantity }) => {
     </div>
   );
 };
+
+
 
 const mapDispatchToProps = (dispatch) => ({
   onRemove: (productId) => dispatch(removeFromCart(productId)),

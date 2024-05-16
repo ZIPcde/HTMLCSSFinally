@@ -72,3 +72,7 @@ margin: auto;
   .AddToCartButton_clickable {
     
   }
+
+  .basket:hover {
+    color: #F16D7F;
+  }

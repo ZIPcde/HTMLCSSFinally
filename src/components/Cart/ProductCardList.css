@@ -121,3 +121,12 @@
     border: none;
 }
 
+.quantity-holder {
+    display: flex;
+    justify-content: center;
+}
+
+.plus-minus-holder {
+    display: flex;
+    flex-direction: column;
+}
