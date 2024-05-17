@@ -1,0 +1,38 @@
+.product_holder {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.pagination_center {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: solid 1.5px #EBEBEB;
+    border-radius: 7px;
+    height: 43px;
+    width: min-content;
+}
+
+.pagination>* {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.pagination button {
+    background-color: white;
+    color: #C4C4C4;
+    font-size: 16px;
+    border: none;
+}
+
+.active {
+    color: #EF5B70 !important;
+}

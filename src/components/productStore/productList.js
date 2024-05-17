@@ -7,7 +7,7 @@ const productList = [
         color: "Blue",
         size: "S",
         price: 70,
-        backgroundColor: "none",
+        backgroundColor: "#F2EDEE",
         gender: 'man'
     }, 
     {
@@ -51,7 +51,7 @@ const productList = [
         color: "White",
         size: "M",
         price: 115,
-        backgroundColor: "#F3EDED",
+        backgroundColor: "#E2DEDD",
         gender: 'man'
     },
     {
@@ -73,7 +73,7 @@ const productList = [
         color: "White",
         size: "M",
         price: 39,
-        backgroundColor: "none",
+        backgroundColor: "#F7F7F7",
         gender: 'woman'
     },
     {
@@ -95,7 +95,7 @@ const productList = [
         color: "White",
         size: "XL",
         price: 79,
-        backgroundColor: "#F3EEEF",
+        backgroundColor: "#F2EDEE",
         gender: 'man'
     },
     {
