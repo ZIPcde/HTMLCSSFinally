@@ -14,7 +14,6 @@ import Menufilter from './menu/menuFilter/fillingOfMenu';
 const Products = () => {
 
    const [selectedSizes, setSelectedSizes] = useState({
-    XS: false,
     S: false,
     M: false,
     L: false,

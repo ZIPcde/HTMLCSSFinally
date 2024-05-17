@@ -128,5 +128,41 @@
 
 .plus-minus-holder {
     display: flex;
-    flex-direction: column;
+    margin-left: 5px;
+    /* flex-direction: column; */
+}
+
+.red {
+    color: #F16D7F;
+}
+
+.h3-btn-holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 337px;
+}
+
+.quantity-holder {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.cart_product-text {
+    height: 26px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.btn-cross-remove {
+    /* background-color: #F16D7F; */
+    color: #575757;
+    /* color: white; */
+}
+
+.btn-cross-remove:hover {
+    /* background-color: #F16D7F; */
+    color: #F16D7F;
+    /* color: white; */
 }
