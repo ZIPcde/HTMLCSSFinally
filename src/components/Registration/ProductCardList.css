@@ -6,6 +6,10 @@
     box-shadow: 15px 15px 20px #bbbbbb;
 }
 
+.registration_text-holder {
+    display: flex;
+}
+
 .product-holder {
     display: flex;
     justify-content: center;
@@ -135,6 +139,18 @@
     color: #FFFFFF;
     border: none;
 }
+/*  */
+.registration__btn{
+    width: 167px !important;
+    height: 50px !important;
+    background-color: #F16D7F !important;
+    color: #FFFFFF;
+    border: none !important;
+}
+
+.registration_arrow_btn {
+    margin-left: 20px;
+}
 
 .quantity-holder {
     display: flex;
@@ -180,4 +196,17 @@
     /* background-color: #F16D7F; */
     color: #F16D7F;
     /* color: white; */
+}
+
+.LOYALTY {
+    margin-top: 64px;
+    margin-left: 128px;
+}
+
+.registration_ul {
+    list-style-image: url('./products/img/mark.svg');
+}
+
+.registration_ul li {
+    margin-top: 16px;
 }
