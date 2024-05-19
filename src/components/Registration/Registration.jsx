@@ -12,7 +12,7 @@ import Subscribe from '../subscribe/subscribe';
 import Footer from '../footer/footer';
 // import ProductList from './ProductList';
 
-function Catalog() {
+function Registration() {
     return (
       <div className="App">
         <Nav />
@@ -28,4 +28,4 @@ function Catalog() {
     );
   }
   
-  export default Catalog;
+  export default Registration;

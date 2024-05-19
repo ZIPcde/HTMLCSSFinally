@@ -24,8 +24,9 @@ margin: auto;
     object-fit: cover; /* Обрезать картинку по ширине */
 }
 
-.card_txt__holder {
-
+.card {
+  background-color: #F8F8F8;
+  margin-bottom: 20px;
 }
 
 .card_txt__name {
@@ -38,6 +39,14 @@ margin: auto;
 
 .card_txt__price {
 
+}
+
+.light {
+  font-weight: 100;
+}
+
+.st5D5D5D {
+  color: #5D5D5D;
 }
 
 .overlay {

@@ -22,7 +22,10 @@ const Items = () => {
           <div className="peaces2">
           <CustomMenu />
         {/* <img src={nav_Menu} alt="nav_Menu.svg" /> */}
-        <img src={nav_Men} alt="nav_Men.svg" />
+        <Link to="/registration">
+               <img src={nav_Men} alt="nav_Men.svg" />
+                </Link>
+
         <Basket />
           </div>
       </div>
