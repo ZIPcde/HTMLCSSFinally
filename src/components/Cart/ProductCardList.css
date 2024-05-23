@@ -11,6 +11,7 @@
     justify-content: center;
     align-items: start;
     height: 100%;
+    max-width: 1140px;
     width: 100%;
     margin-bottom: 50px;
 }
@@ -50,6 +51,7 @@
 .cart_form {
     height: 543px;
     margin-top: 50px;
+    margin-right: 20px;
     margin-left: 128px;
     margin-bottom: 50px;
 }
@@ -71,7 +73,7 @@
 .cart_shippingadress form input{
     border: solid 1px #A4A4A4;
     margin: 20px 0 0px 0;
-    width: 360px;
+    width: 340px;
     padding-left: 17px;
     height: 45px;
 }
@@ -180,4 +182,23 @@
     /* background-color: #F16D7F; */
     color: #F16D7F;
     /* color: white; */
+}
+
+.product-holder-collection {
+    margin-left: 10px;
+}
+
+
+@media (width <= 960px) {
+    .cart_form {
+      /* margin-left: 128px;   */
+    }
+
+    .cart_form {
+        /* height: 543px;
+        margin-top: 50px;
+        margin-right: 20px;
+        margin-left: 128px;
+        margin-bottom: 50px; */
+    }
 }

@@ -1,0 +1,23 @@
+.cart_App {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+    /* width: 100%; */
+}
+
+.subscribe_div__internalholder {
+    width: 100vw;
+}
+
+.catalog_pinkbg {
+    width: 100vw;
+}
+
+@media (min-width: 936px) {
+    .cart_App {
+        width: 100%;
+    }
+}

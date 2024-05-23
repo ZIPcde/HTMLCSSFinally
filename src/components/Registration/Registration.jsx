@@ -2,9 +2,8 @@ import React from 'react';
 import Nav from '../nav/nav';
 // import CartControls from './CartControls';
 import ProductCardList from './ProductCardList';
-
-
 import Header from './header/header';
+import "./Registration.css";
 // import Offer from '../offer/offer';
 // import Products from './products';
 // import Discount from '../discount/discount';
@@ -14,7 +13,7 @@ import Footer from '../footer/footer';
 
 function Registration() {
     return (
-      <div className="App">
+      <div className="registration_App">
         <Nav />
         <Header />
         {/* <Offer /> */}

@@ -1,5 +1,7 @@
 .subscribe_div__holder {
+    /* width: 100vw; */
     height: 448px;
+    position: relative;
     background-image: url("./img/Layer 41.png");
     background-size: 110% auto;
     background-repeat: no-repeat;
@@ -13,18 +15,19 @@
 }
 
 .subscribe_div__internalholder {
-    width: 100%;
+    width: 10000px; 
     height: 100%;
     background-color: rgba(255, 255, 255, 0.5);
     display: flex;
     align-items: center;
-    opacity: 1.0;
     justify-content: center;
+    opacity: 1.0;
 }
 
 .subscribe_div__holder::before {
     content: '';
-    /* position: absolute; */
+    /* width: 100vw; */
+    position: absolute;
     background-image: url("./img/Layer 41.png");
     opacity: 0.5; /* Прозрачность фона */
     z-index: -1; /* Помещаем псевдоэлемент под другие элементы */
