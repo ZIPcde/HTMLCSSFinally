@@ -6,10 +6,12 @@ import Products from './products/products';
 import Discount from '../discount/discount';
 import Subscribe from '../subscribe/subscribe';
 import Footer from '../footer/footer';
+import "./index.css";
 
 function Index() {
     return (
-      <div className="App">
+      <div className="index_App">
+        <div className="index_center">
         <Nav />
         <Header />
         <Offer />
@@ -17,6 +19,7 @@ function Index() {
         <Discount />
         <Subscribe />
         <Footer />
+        </div>
       </div>
     );
   }

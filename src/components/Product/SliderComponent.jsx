@@ -34,7 +34,7 @@ const SliderComponent = ({ productListOf }) => {
           </svg>
             </div>
           </div>
-          <div className="discr_holder">
+          <div className="product_discr_holder">
               <h3 className='red'>{(currentProduct.gender === "woman" ? "WOMEN COLLECTION" : "MEN COLLECTION")}</h3>
                               <svg width="63" height="4" viewBox="0 0 63 4" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M63 0.786865H0V3.81225H63V0.786865Z" fill="#EF5B70"/>

@@ -8,6 +8,7 @@
 
 .registration_text-holder {
     display: flex;
+    margin-bottom: 96px;
 }
 
 .product-holder {
@@ -72,7 +73,7 @@
     flex-direction: column;
 }
 
-.cart_shippingadress form input{
+.reg_form_text{
     border: solid 1px #A4A4A4;
     margin: 20px 0 0px 0;
     width: 360px;
@@ -198,15 +199,60 @@
     /* color: white; */
 }
 
-.LOYALTY {
-    margin-top: 64px;
-    margin-left: 128px;
-}
-
 .registration_ul {
     list-style-image: url('./products/img/mark.svg');
 }
 
 .registration_ul li {
     margin-top: 16px;
+}
+
+.registration_switch-holder {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.registration_input-p {
+    display: flex;
+    align-items: end;
+    padding-top: 3px;
+}
+
+.registration_input-p.second {
+    margin-left: 20px;
+}
+
+.reg_form_switch {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 20px; 
+    height: 20px;
+    margin-right: 15px;
+}
+
+.registration_form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.registration_text-passchar {
+    max-width: 360px;
+}
+
+input[type=radio] {
+
+  }
+  
+.registration_loyalty {
+    max-width: 652px;
+    font-size: 24px;
+    font-weight: 100;
+    margin-top: 64px;
+    margin-left: 128px;
 }

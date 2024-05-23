@@ -1,9 +1,0 @@
-.product_holder {
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.btn-cross-remove {
-    border: none;
-}

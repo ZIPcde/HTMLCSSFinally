@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+}
+
+.index_App {
+    position: absolute;
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* .index_center {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+} */
+
+@media (min-width: 1170px) {
+    .index_App {
+        width: 100%;
+    }
+}

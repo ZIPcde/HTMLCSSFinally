@@ -6,10 +6,11 @@ import Products from './products/products';
 import Discount from '../discount/discount';
 import Subscribe from '../subscribe/subscribe';
 import Footer from '../footer/footer';
+import "./Catalog.css";
 
 function Catalog() {
     return (
-      <div className="App">
+      <div className="catalog_App">
         <Nav />
         <Header />
         {/* <Offer /> */}

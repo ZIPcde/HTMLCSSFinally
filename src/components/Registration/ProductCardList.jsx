@@ -5,15 +5,19 @@ function ProductCardList() {
 return (
   <div className="registration_text-holder">
       <div className="cart_form">
-        <div className="cart_shippingadress">
+        <div className="">
           <p className="lato">Your Name</p>
-          <form action="#">
-            <input type="text" className="color_text_grey-low" placeholder="First Name" />
-            <input type="text" className="color_text_grey-low" placeholder="Last Name" />
+          <form className="registration_form" action="#">
+            <input type="text" className="color_text_grey-low reg_form_text" placeholder="First Name" />
+            <input type="text" className="color_text_grey-low reg_form_text" placeholder="Last Name" />
+            <div className="registration_switch-holder">
+            <p className="registration_input-p" ><input className="reg_form_switch" name="gender" type="radio" value="Male"/> Male</p>
+            <p className="registration_input-p second"><input className="reg_form_switch" name="gender" type="radio" value="Female"/> Female</p>
+            </div>
             <p className="lato">Login details</p>
-            <input type="text" placeholder="Email" />
-            <input type="text" placeholder="Password" />
-            <p>Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
+            <input type="text" className="color_text_grey-low reg_form_text" placeholder="Email" />
+            <input type="text" className="color_text_grey-low reg_form_text" placeholder="Password" />
+            <p className="registration_text-passchar" >Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
 
             {/* <button>GET A QUOTE</button> */}
             <button className="registration__btn">JOIN NOW<svg className="registration_arrow_btn" width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -27,7 +31,7 @@ return (
             <button>JOIN NOW</button>
           </div> */}
         </div>
-        <div className="LOYALTY">
+        <div className="registration_loyalty lato">
           <p>LOYALTY HAS ITS PERKS</p>
           <p>Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
           <ul className="registration_ul">

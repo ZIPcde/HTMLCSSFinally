@@ -6,7 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px; /* Пример значения отступа, которое можно изменить */
+    /* margin-bottom: 10px; */
     flex-grow: 1;
 }
 

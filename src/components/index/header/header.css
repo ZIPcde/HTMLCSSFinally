@@ -1,18 +1,20 @@
-.pinkbg {
+.index_pinkbg {
+    /* position: relative; */
+    /* width: 100vw; */
     display: flex;
     background-color: #F1E4E6;
     justify-content: center;
 
 }
 
-.div_header {
-    width: 70%;
+.index_div_header {
+    /* width: 100vw; */
     display: flex;
     background-color: #F1E4E6;
     justify-content: center;
 }
 
-.header_sp1 {
+.index_header_sp1 {
     margin: 0;
     margin-left: 10px;
     /* font-family: Lato; */
@@ -24,12 +26,12 @@
 
 }
 
-.header_p__nomargin {
+.index_header_p__nomargin {
     margin-bottom: 0;
     margin-top: 0px;
 }
 
-.header_sp2 {
+.index_header_sp2 {
     padding: 0;
     margin-top: 0px;
     margin-left: 10px;
@@ -41,7 +43,7 @@
 
 }
 
-.header_sp3 {
+.index_header_sp3 {
     /* font-family: Lato; */
     font-size: 32px;
     font-weight: 700;
@@ -51,7 +53,7 @@
 
 }
 
-.text {
+.index_text {
     display: flex;
     min-width: 348;
     justify-content: center;
@@ -59,7 +61,11 @@
     margin: 70px;
 }
 
-.rectangle {
+.index_text2 {
+    width: 402px;
+}
+
+.index_rectangle {
     margin-top: 3px;    
     padding-top: 0px;
     width: 12px;
