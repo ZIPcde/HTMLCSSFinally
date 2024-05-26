@@ -7,7 +7,8 @@
 }
 
 .div_discount__holder {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     align-items: center; /* Центрирование по вертикали */
     background-color: #222224;
@@ -26,4 +27,16 @@
     color: #FBFBFB;
     font-weight: 400;
     font-size: 14px;
+}
+
+@media (max-width: 768px) {
+.div_discount {
+    height: 610px;
+    display: flex;
+    gap: 48px;
+    flex-direction: column;
+    background-color: #222224;
+    justify-content: center;
+    align-items: center; /* Центрирование по вертикали */
+}
 }

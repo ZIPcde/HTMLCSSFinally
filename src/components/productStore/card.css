@@ -1,11 +1,15 @@
+.card_link_reactrouterdom {
+  width: 360px;
+}
+
 .card {
 width: 360px;
 height: 587px;
-top: 1576px;
-left: 230px;
+/* top: 1576px; */
+/* left: 230px; */
 gap: 0px;
-opacity: 0px;
-margin: auto;
+/* opacity: 0px; */
+/* margin: auto; */
 }
 
 .card_img__holder {

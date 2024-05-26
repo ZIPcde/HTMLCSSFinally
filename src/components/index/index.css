@@ -1,24 +1,21 @@
 body {
-    margin: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .index_App {
     position: absolute;
-    /* width: 100%; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    margin: 0 auto;
 }
 
-/* .index_center {
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100%;
-} */
+.index_center {
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+}
 
 @media (min-width: 1170px) {
     .index_App {

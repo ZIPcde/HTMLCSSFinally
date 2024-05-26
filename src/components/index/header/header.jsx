@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <header className="index_pinkbg next-element">
             <div className="index_div_header">
-                <img src={firstMan} alt="firstMan" />
+                <img className='index_header_img-firstman' src={firstMan} alt="firstMan" />
                 <div className="index_text">
                     <div className="index_rectangle"></div>
                     <div className="index_text2">

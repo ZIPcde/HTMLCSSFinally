@@ -1,5 +1,5 @@
 .index_pinkbg {
-    /* position: relative; */
+    position: static !important;
     /* width: 100vw; */
     display: flex;
     background-color: #F1E4E6;
@@ -8,7 +8,7 @@
 }
 
 .index_div_header {
-    /* width: 100vw; */
+    width: 100vw;
     display: flex;
     background-color: #F1E4E6;
     justify-content: center;
@@ -55,7 +55,7 @@
 
 .index_text {
     display: flex;
-    min-width: 348;
+    min-width: 300;
     justify-content: center;
     align-items: center;
     margin: 70px;
@@ -75,5 +75,14 @@
     gap: 0px;
     opacity: 0px;
     background: #F16D7F;
+
+}
+
+@media (max-width: 420px) {
+.index_header_img-firstman {
+    display: none;
+}
+
+
 
 }

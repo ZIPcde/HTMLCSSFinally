@@ -17,7 +17,7 @@ const Card = (props) => {
   };
 
   return (
-    <Link to="/product" style={linkStyle}>
+    <Link className="card_link_reactrouterdom" to="/product" style={linkStyle}>
       <div className="card">
         <div className="card_img__holder" style={{ backgroundColor: productList[props.indexout].backgroundColor }}>
           <img className="card_img__img" src={require(`./${folder}`)} alt="img" />

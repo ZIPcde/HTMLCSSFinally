@@ -21,7 +21,7 @@ function getRandomIndexes(array) {
   const randomIndexes = getRandomIndexes(productList);
   function MyFormRandom() {
     return (
-      <div className="product_holder">
+      <div className="index_product_holder">
         {randomIndexes.map((index) => {
           const product = productList[index]; 
   

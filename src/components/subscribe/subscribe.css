@@ -2,10 +2,10 @@
     /* width: 100vw; */
     height: 448px;
     position: relative;
-    background-image: url("./img/Layer 41.png");
+    /* background-image: url("./img/Layer 41.png");
     background-size: 110% auto;
     background-repeat: no-repeat;
-    background-position: left -50px top -250px;;
+    background-position: left -50px top -250px;; */
     display: flex;
     align-items: center;
     /* opacity: 0.5; */
@@ -15,23 +15,43 @@
 }
 
 .subscribe_div__internalholder {
-    width: 10000px; 
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.5);
+    /* width: 100%;  */
+    /* height: 100%;*/
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    box-sizing: content-box;
     display: flex;
     align-items: center;
     justify-content: center;
     opacity: 1.0;
+    overflow: hidden;   
 }
 
-.subscribe_div__holder::before {
-    content: '';
-    /* width: 100vw; */
+.subscribe_bcgrnd__holder {
+    box-sizing: content-box;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 448px;
     position: absolute;
+    z-index: -2;
+    opacity: 0.5;
+    scale: 1.0;
+    overflow: hidden;
+}
+
+.subscr_bckgr_img {
+    width: 100vw;
+    overflow: hidden;
+}
+
+/* .subscribe_div__holder::before {
+    content: ''; */
+    /* width: 100vw; */
+    /* position: absolute;
     background-image: url("./img/Layer 41.png");
     opacity: 0.5; /* Прозрачность фона */
-    z-index: -1; /* Помещаем псевдоэлемент под другие элементы */
-}
+    /* z-index: -1; Помещаем псевдоэлемент под другие элементы */ 
+/* } */
 
 .subscribe_div__pict {
     width: 360px;
@@ -140,5 +160,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (min-width: 1170px) {
+    .subscribe_bcgrnd__holder {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 448px;
+        position: absolute;
+        z-index: -2;
+        opacity: 0.5;
+        scale: 1.0;
+        overflow: hidden;
+    }
 
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import "./subscribe.css";
 import round from "./img/Layer 40.png";
+import subsrbcg from "./img/Layer 41.png";
 import red from "./img/Rounded Rectangle 5 copy.png";
 import grey from "./img/Rounded Rectangle 6.png";
 // import nature from "./img/Layer 41.png";
@@ -8,8 +9,10 @@ import grey from "./img/Rounded Rectangle 6.png";
 const Subscribe = () => {
     return (
             <div className="subscribe_div__holder" >
+                <div className="subscribe_bcgrnd__holder">
+                    <img className='subscr_bckgr_img' src={subsrbcg} alt="subscr_img" />
+                </div>    
                 <div className="subscribe_div__internalholder">
-                    
                 <div className="subscribe_div__pict1">
                     <div className="subscribe_pict__frameholder1">
                     <div className="subscribe_pict__holder">
