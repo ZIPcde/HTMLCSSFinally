@@ -22,7 +22,7 @@ const Items = () => {
           <div className="peaces2">
           <CustomMenu />
         {/* <img src={nav_Menu} alt="nav_Menu.svg" /> */}
-        <Link to="/registration">
+        <Link className="nav_reg-icon" to="/registration">
                <img src={nav_Men} alt="nav_Men.svg" />
                 </Link>
 

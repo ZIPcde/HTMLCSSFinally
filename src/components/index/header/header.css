@@ -78,11 +78,37 @@
 
 }
 
-@media (max-width: 420px) {
+@media (max-width: 431px) {
 .index_header_img-firstman {
     display: none;
 }
 
+.index_pinkbg {
+    height: 363px;
+}
 
+.index_header_sp1 {
+    font-size: 38px;
+    display: inline-flex;
+    text-wrap: nowrap;
+}
+
+.index_header_sp2 {
+    font-size: 20px;
+    display: inline-flex;
+    text-wrap: nowrap;
+}
+.index_header_sp3 {
+    font-size: 20px;
+    display: inline-flex;
+    text-wrap: nowrap;
+}
+.index_text2 {
+    width: fit-content;
+}
+
+.index_header-mediumtext-holder {
+    text-wrap: nowrap;
+}
 
 }

@@ -56,3 +56,20 @@
     margin-left: 4px;
     margin-right: 4px;
 }
+
+@media (max-width: 430px) {
+
+.nav_reg-icon {
+    display: none;
+}
+
+.nav_busket-icon {
+    display: none;
+}
+
+.peaces2 {
+    justify-content: center;
+}
+
+
+}

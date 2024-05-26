@@ -12,7 +12,7 @@ const Header = () => {
                     <div className="index_text2">
                         <p className='index_header_p__nomargin'><span className="index_header_sp1">THE BRAND </span>
                             <br /></p>
-                        <div >
+                        <div className='index_header-mediumtext-holder' >
                             <span className="index_header_sp2">OF LUXERIOUS </span>              <span className="index_header_sp3">FASHION</span>
                         </div>
                     </div>
