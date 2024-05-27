@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import "./App.css";
 import Index from './components/index/index';
 import Catalog from './components/Catalog/Catalog';
 import Cart from './components/Cart/Cart';
 import Product from './components/Product/Product';
-
 import Registration from './components/Registration/Registration';
 
 
