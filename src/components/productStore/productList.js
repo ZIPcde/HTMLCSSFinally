@@ -102,7 +102,7 @@ const productList = [
         id: 9,
         folder: "10_Black suit/img.png",
         productName: 'Black suit',
-        ptoductDiscr: 'Черный костюм, который мгновенно превращает вас в агента "Мен in Black".',
+        ptoductDiscr: 'Черный костюм, который мгновенно превращает вас в агента "Man in Black".',
         color: "White",
         size: "L",
         price: 199,

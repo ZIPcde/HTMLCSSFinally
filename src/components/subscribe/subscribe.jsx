@@ -20,17 +20,19 @@ const Subscribe = () => {
                     </div>
                     </div>
                     <div className="subscribe_pict__textholder">
-                    <p className="subscribe_pict__discrholder">“Vestibulum quis porttitor dui! Quisque</p><p> viverra nunc mi, a pulvinar purus</p> <p>condimentum“</p>
+                    <p className="subscribe_pict__discrholder">“Vestibulum quis porttitor dui! Quisque</p><p className="subscribe_pict__discrholder"> viverra nunc mi, a pulvinar purus</p> <p className="subscribe_pict__discrholder">condimentum“</p>
                     </div>
                     
                 </div>
                 <div className="subscribe_div__email">
-                    <h3>SUBSCRIBE </h3>
-                    <h4>FOR OUR NEWLETTER AND PROMOTION</h4>
+                    <h3 className="subscribe_pict__discrholder">SUBSCRIBE </h3>
+                    <h4 className="subscribe_pict__discrholder subscribe_pict__discrholder-end">FOR OUR NEWLETTER AND PROMOTION</h4>
                     <div className="subscribe_input__centering">
                         <div className="subscribe_input__frame">
-                            <img src={grey} alt="red" />
-                            <img src={red} alt="red" />
+                            <div className="subscribe_left-bckg"></div>
+                            <div className="subscribe_right-bckg"></div>
+                            {/* <img className='subscribe_left-bckg' src={grey} alt="red" />
+                            <img className='subscribe_right-bckg'src={red} alt="red" /> */}
                         </div>
                         <div className="subscribe_input__frame2">
                         <input className="subscribe_input__email" type="email" placeholder="Enter Your Email" />

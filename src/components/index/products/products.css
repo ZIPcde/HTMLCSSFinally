@@ -31,7 +31,7 @@
 .product_holder {
     display: grid;
     /* Будет создано 3 колонки */
-    grid-template-columns: 150px auto 40%;
+    grid-template-columns: 150px auto 30%;
     /* Будет создано 3 ряда */
     grid-template-rows: 250px 10vw 15rem;
     padding: 0;
@@ -64,13 +64,19 @@
 
 .product_all {
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0 auto; */
     margin-bottom: 95px;
-    max-width: 1140px;
-    width: auto;
+    max-width: 1172px;
+    width: fit-content;
     padding: 0px;
 }
 
 .product_holder__output {
+    width: fit-content;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
 }

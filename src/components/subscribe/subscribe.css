@@ -1,7 +1,10 @@
 .subscribe_div__holder {
-    /* width: 100vw; */
-    height: 448px;
-    position: relative;
+    /* position: relative; */
+    width: 100%;
+    margin: 0;
+    height: fit-content;
+    /* min-height: 448px; */
+    /* position: relative; */
     /* background-image: url("./img/Layer 41.png");
     background-size: 110% auto;
     background-repeat: no-repeat;
@@ -15,32 +18,41 @@
 }
 
 .subscribe_div__internalholder {
+    position: absolute;
     /* width: 100%;  */
-    /* height: 100%;*/
+    height: fit-content;
     /* background-color: rgba(255, 255, 255, 0.5); */
-    box-sizing: content-box;
+    /* box-sizing: content-box; */
     display: flex;
     align-items: center;
     justify-content: center;
     opacity: 1.0;
-    overflow: hidden;   
+    /* overflow: hidden;    */
+    z-index: 2;
 }
 
 .subscribe_bcgrnd__holder {
-    box-sizing: content-box;
-    display: flex;
-    align-items: center;
+    /* box-sizing: content-box; */
+    /* display: flex; */
+    /* align-items: center; */
     width: 100vw;
-    height: 448px;
-    position: absolute;
-    z-index: -2;
+    /* position: absolute; */
+    /* top: 0;
+    left: 0; */
+    margin: 0;
+    /* min-height: 448px; */
+    /* position: absolute; */
+    z-index: 1;
     opacity: 0.5;
     scale: 1.0;
     overflow: hidden;
 }
 
 .subscr_bckgr_img {
-    width: 100vw;
+    /* position: absolute; */
+    /* top: 0;
+    left: 0; */
+    width: 100%;
     overflow: hidden;
 }
 
@@ -54,15 +66,15 @@
 /* } */
 
 .subscribe_div__pict {
-    width: 360px;
+    max-width: 360px;
     height: 225px;
     z-index: 1;
 }
 
 .subscribe_div__email {
     text-align: center;
-    width: 557px;
-    height: 142px;
+    max-width: 557px;
+    min-height: 142px;
     z-index: 1;
 }
 
@@ -87,6 +99,7 @@
 }
 
 .subscribe_pict__frameholder1 {
+    margin-top: 120px;
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
@@ -112,42 +125,57 @@
 .subscribe_pict__textholder p {
     margin: 1px;
     font-size: 20px;
-    display: grid;
+    display: flex;
     justify-content: center;
     z-index: 0;
 }
 
 .subscribe_input__email {
+    margin: 0;
+    margin-left: 10px;
     height: 40px;
-    margin-left: 19px;
-    width: 220px;
+    /* margin-left: 19px; */
+    width: 60%;
+    max-width: 220px;
     border: none;
     background-color: none;
     background: none;
 }
 
 .subscribe_input__btn {
-    margin-left: 10px;
+    margin-left: -10px;
     height: 45px;
-    width: 100px;
+    width: 38%;
+    max-width: 100px;
     background-color: none;
     background: none;
     color: #FFFFFF;
     border: none;
 }
 
+.subscribe_pict__discrholder-end {
+    margin-bottom: 20px;
+}
+
 .subscribe_input__frame2 {
+    width: 95vw;
+    max-width: 290px;
     position: absolute;
     display: flex;
+    padding-left: 15px;
     align-items: center;
+    justify-content: center;
 }
 
 .subscribe_input__frame {
-   
+   margin-top: 0px;
     display: flex;
+    justify-content: center;
     align-items: center;
-    width: 356px;
-    height: 80px;
+    /* max-width: 290px; */
+    width: 95vw;
+    max-width: 341px;
+    height: 40px;
     /* border-top-right-radius: 150px 50px;
     border-top-left-radius: 150px 50px;
     border-bottom-right-radius: 150px 50px;
@@ -155,24 +183,113 @@
     overflow: hidden;  */
 }
 
+.subscribe_left-bckg {
+    width: 65%;
+    height: 40px;
+    background-color: #E1E1E1;
+    border-top-left-radius: 19px;
+    border-bottom-left-radius: 19px;
+}
+
+.subscribe_right-bckg {
+    width: 33%;
+    height: 40px;
+    background-color: #F16D7F;
+    border-top-right-radius: 19px;
+    border-bottom-right-radius: 19px;
+}
+
 .subscribe_input__centering {
-    position: relative;
+    /* position: relative; */
+    margin: 0 auto;
+    width: 90vw;
+    max-width: 341px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-@media (min-width: 1170px) {
+.subscribe_div__pict1 {
+    margin-top: -120px;
+    margin-right: 80px;
+}
+
+@media (min-width: 769px) {
     .subscribe_bcgrnd__holder {
-        display: flex;
+        /* display: flex;
         align-items: center;
-        width: 100%;
+        width: 100%; */
         height: 448px;
-        position: absolute;
+        /* position: absolute;
         z-index: -2;
         opacity: 0.5;
         scale: 1.0;
-        overflow: hidden;
+        overflow: hidden; */
     }
 
+}
+
+@media (max-width: 768px) {
+.subscribe_div__holder {
+    height: fit-content;
+}
+
+.subscribe_bcgrnd__holder {
+    height: 400px;
+}
+
+.subscr_bckgr_img {
+    height: cover;
+    width: 150vw;
+}
+
+    .subscribe_div__internalholder {
+        /* height: 693px; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 1.0;
+        margin-top: 64px;
+        margin-bottom: 140px;
+        /* overflow: hidden; */
+    }
+    .subscribe_div__pict1 {
+        margin-top: calc(100px - 15vw);
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 430px) {
+    .subscribe_div__holder {
+        height: fit-content;
+    }
+        .subscribe_div__internalholder {
+            /* position: relative; */
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            /* opacity: 1.0; */
+            /* margin-top: 64px;
+            margin-bottom: 140px; */
+            /* overflow: hidden; */
+        }
+        .subscribe_div__pict1 {
+            /* margin-top: 140px; */
+            margin-right: 0px;
+        }
+        .subscribe_bcgrnd__holder {
+            height: 550px;
+        }
+        .subscr_bckgr_img {
+            height: 550px;
+        }
+        .subscribe_div__email {
+            /* margin-bottom: 60px; */
+        }
+    .subscribe_pict__discrholder {
+        font-size: 5vw !important;
+    }
 }

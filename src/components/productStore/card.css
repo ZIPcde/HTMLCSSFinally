@@ -1,48 +1,44 @@
 .card_link_reactrouterdom {
-  width: 360px;
+  width: 100%;
+  height: 100%;
+  max-width: 360px;
+  max-height: 580px;
 }
 
 .card {
-width: 360px;
-height: 587px;
+width: 100%;
+height: 100%;
 /* top: 1576px; */
 /* left: 230px; */
 gap: 0px;
 /* opacity: 0px; */
 /* margin: auto; */
+background-color: #F8F8F8;
+/* margin-bottom: 20px; */
 }
 
 .card_img__holder {
     /* float: left;
     margin-right: 10px; */
-    text-align: center;
+    display: flex;
+    height: 62%;
+    align-items: end;
+    justify-content: center;
     /* background-color: burlywood; */
     position: relative;
     /* display: inline-block; */
 }
 
 .card_img__img {
-    height: 420px;
-    max-width: 360px;
+    max-height: 100%;
+    /* width: 100%; */
     max-width: 100%;
+    /* vertical-align: bottom; */
     object-fit: cover; /* Обрезать картинку по ширине */
 }
 
-.card {
-  background-color: #F8F8F8;
-  margin-bottom: 20px;
-}
-
-.card_txt__name {
-
-}
-
-.card_txt__discr {
-
-}
-
-.card_txt__price {
-
+.card_txt__holder {
+  height: 38%;
 }
 
 .light {
@@ -88,4 +84,11 @@ gap: 0px;
 
   .basket:hover {
     color: #F16D7F;
+  }
+
+  @media (min-width: 1172px) {
+    .card_link_reactrouterdom {
+      width: 360px;
+      height: 580px;
+    }
   }

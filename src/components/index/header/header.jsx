@@ -4,7 +4,7 @@ import firstMan from "./img/firstMan.png";
 
 const Header = () => {
     return (
-        <header className="index_pinkbg next-element">
+        <div className="index_pinkbg next-element">
             <div className="index_div_header">
                 <img className='index_header_img-firstman' src={firstMan} alt="firstMan" />
                 <div className="index_text">
@@ -18,7 +18,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-        </header >
+        </div >
     );
 }
 

@@ -148,8 +148,10 @@
 
 .product_all__catalog {
     margin: 0 auto;
+    /* display: flex; */
+    justify-content: center;
     margin-bottom: 95px;
-    max-width: 1140px;
+    max-width: 1172px;
     padding: 0px;
 }
 
