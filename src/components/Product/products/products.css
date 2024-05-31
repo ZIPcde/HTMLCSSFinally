@@ -186,3 +186,10 @@
   .menu_category__red {
     margin-left: 15px;
   }
+
+  @media (max-width: 431px) {
+  .catalog_filter__holder {
+    margin: 0px !important;
+    margin-left: 5px !important;
+  }
+}

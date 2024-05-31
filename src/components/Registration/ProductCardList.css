@@ -8,6 +8,7 @@
 
 .registration_text-holder {
     display: flex;
+    justify-content: center;
     margin-bottom: 96px;
 }
 
@@ -55,7 +56,7 @@
 .cart_form {
     height: 543px;
     margin-top: 50px;
-    margin-left: 128px;
+    margin-left: 28px;
     margin-bottom: 50px;
 }
 
@@ -250,9 +251,74 @@ input[type=radio] {
   }
   
 .registration_loyalty {
-    max-width: 652px;
+    max-width: 550px;
     font-size: 24px;
     font-weight: 100;
     margin-top: 64px;
-    margin-left: 128px;
+    margin-left: 9vw;
+    margin-right: 3vw;
+}
+
+.registration_catalog_header__holder {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-left: 9vw;
+    width: 100%;
+}
+
+@media (max-width: 1172px) {
+    .registration_loyalty {
+        max-width: 400px;
+        font-size: 16px;
+        font-weight: 100;
+        margin-top: 64px;
+        margin-left: 1vw;
+        margin-right: 2vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .registration_text-holder {
+flex-direction: column;
+align-items: center;
+justify-content: center;
+    }
+    .registration_catalog_header__holder {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        margin-left: 3vw;
+        width: 100%;
+    }
+    .reg_form_text{
+        border: solid 1px #A4A4A4;
+        margin: 10px 0 0px 0;
+        width: 340px;
+        padding-left: 10px;
+        height: 45px;
+    }
+    .cart_form {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 431px) {
+    .registration_catalog_header__holder {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0vw;
+        width: 100%;
+    }
+    .reg_form_text{
+        /* border: solid 1px #A4A4A4; */
+        margin: 10px;
+        width: 93%;
+        padding-left: 10px;
+        height: 45px;
+    }
+    .registration_loyalty {
+        margin-top: 10px !important;
+    }
 }

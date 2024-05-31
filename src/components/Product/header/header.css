@@ -30,3 +30,10 @@
     font-size: 14px;
     text-decoration: none;
 }
+
+@media (max-width: 767px) {
+    .catalog_header__holder {
+        display: flex !;
+        flex-direction: column !important;
+    }
+}
