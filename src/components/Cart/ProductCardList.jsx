@@ -106,7 +106,7 @@ const ProductCardList = ({ products, onRemove, onUpdateQuantity }) => {
       <div className="product-holder-collection">
         {cartIsEmpty ? (
           <div className="empty-cart-message">
-            <h2 className="red">Your cart is empty!</h2>
+            <h2 className="cart_empty-text red">Your cart is empty!</h2>
           </div>
         ) : (
           products.map((product, index) => (
