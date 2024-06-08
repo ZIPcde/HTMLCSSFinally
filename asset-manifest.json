@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/HTMLCSSFinally/static/css/main.f31acb29.css",
+    "main.js": "/HTMLCSSFinally/static/js/main.d514e816.js",
+    "static/js/453.08173c42.chunk.js": "/HTMLCSSFinally/static/js/453.08173c42.chunk.js",
+    "static/media/img.png": "/HTMLCSSFinally/static/media/img.9c61915ed8329086e10b.png",
+    "static/media/Layer 41.png": "/HTMLCSSFinally/static/media/Layer 41.3351b0dea3e771686436.png",
+    "static/media/Layer 45.png": "/HTMLCSSFinally/static/media/Layer 45.0a11cf4da2613f61917c.png",
+    "static/media/Layer 43.png": "/HTMLCSSFinally/static/media/Layer 43.ac9d4bcc5c560693effc.png",
+    "static/media/firstMan.png": "/HTMLCSSFinally/static/media/firstMan.5813dae65b48f3af3437.png",
+    "static/media/Layer 30.png": "/HTMLCSSFinally/static/media/Layer 30.4a616afc1d6381d50687.png",
+    "static/media/Layer 44.png": "/HTMLCSSFinally/static/media/Layer 44.1d6a09985e1a88355334.png",
+    "static/media/img.jpg": "/HTMLCSSFinally/static/media/img.57f093fb574c1b2136a1.jpg",
+    "static/media/Lato-Regular.ttf": "/HTMLCSSFinally/static/media/Lato-Regular.9d883d540ee2b4de8024.ttf",
+    "static/media/Lato-Bold.ttf": "/HTMLCSSFinally/static/media/Lato-Bold.636be8de934918e38ed9.ttf",
+    "static/media/Layer 40.png": "/HTMLCSSFinally/static/media/Layer 40.ddcea26f2a73f29540b0.png",
+    "static/media/Truck.svg": "/HTMLCSSFinally/static/media/Truck.2d5181496829a1084482f1a732b176d1.svg",
+    "static/media/crown.svg": "/HTMLCSSFinally/static/media/crown.d3cfba46c7fd4d1e4c8d1903ca3f3b8d.svg",
+    "static/media/perc.svg": "/HTMLCSSFinally/static/media/perc.fe0d8affefedea09666523746bc2f11b.svg",
+    "static/media/nav_basket.svg": "/HTMLCSSFinally/static/media/nav_basket.8caeab43c0d5f0b01b82010e2aef6f69.svg",
+    "static/media/nav_Men.svg": "/HTMLCSSFinally/static/media/nav_Men.94e34999ad9f865938bd332a23eb8712.svg",
+    "static/media/nav_Magnifier.svg": "/HTMLCSSFinally/static/media/nav_Magnifier.3fae16757cf9b548512acc0df85a6db5.svg",
+    "index.html": "/HTMLCSSFinally/index.html",
+    "static/media/Lines.svg": "/HTMLCSSFinally/static/media/Lines.deaab599f5035ec8b0079d60b60aa469.svg",
+    "static/media/mark.svg": "/HTMLCSSFinally/static/media/mark.0b6df5b5c2e39aa41b9a.svg",
+    "static/media/nav_Menu.svg": "/HTMLCSSFinally/static/media/nav_Menu.eba51d0f059e7b0d23f01203c899e324.svg",
+    "main.f31acb29.css.map": "/HTMLCSSFinally/static/css/main.f31acb29.css.map",
+    "main.d514e816.js.map": "/HTMLCSSFinally/static/js/main.d514e816.js.map",
+    "453.08173c42.chunk.js.map": "/HTMLCSSFinally/static/js/453.08173c42.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f31acb29.css",
+    "static/js/main.d514e816.js"
+  ]
+}
