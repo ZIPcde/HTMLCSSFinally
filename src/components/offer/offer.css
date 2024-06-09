@@ -25,20 +25,10 @@
 
 .offer_wide {
     grid-column: 1 / 2;
-    /* Занимает первый столбец */
+
     grid-row: 1 / 2;
-    /* Занимает первую строку */
-    z-index: 2;
-    /* Устанавливаем z-index, чтобы текст был над изображением */
-    /* position: absolute; */
-    /* Абсолютное позиционирование относительно контейнера */
-    /* top: 50%;
-    /* Размещаем текст по вертикали по центру */
-    /* left: 50%;
-    */
 
     position: relative;
-    z-index: 1;
 }
 
 .offerout_sp3 {
@@ -75,7 +65,6 @@
     /* top: 904px; */
     /* left: 1010px; */
     gap: 0px;
-    opacity: 0px;
 }
 
 .internalpict2 {
@@ -94,72 +83,6 @@
     left: 1010px; */
     gap: 0px;
     opacity: 0px;
-    z-index: 0;
-}
-
-.internalpict2::before {
-    background-image: url('#');
-    background-size: cover;
-    background-position: center;
-    grid-column: 1 / 2;
-    /* Занимает первый столбец */
-    grid-row: 1 / 2;
-    /* Занимает первую строку */
-    z-index: 1;
-    /* Устанавливаем z-index, чтобы изображение было выше текста */
-    content: '';
-    width: 100%;
-    height: 100%;
-    position: relative;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgba(44, 40, 40, 0.7);
-    /* Цвет и прозрачность слоя */
-}
-
-.internalpict:hover::before {
-    background-color: rgba(49, 40, 40, 0.0);
-    transition: background-color 1.2s ease;
-}
-
-.internalpict2:hover::before {
-    background-color: rgba(49, 40, 40, 0.0);
-    transition: background-color 1.2s ease;
-}
-
-.internalpict::before {
-    background-image: url('#');
-    background-size: cover;
-    background-position: center;
-    grid-column: 1 / 2;
-    /* Занимает первый столбец */
-    grid-row: 1 / 2;
-    /* Занимает первую строку */
-    z-index: 1;
-    /* Устанавливаем z-index, чтобы изображение было выше текста */
-    content: '';
-    width: 100%;
-    height: 100%;
-    position: relative;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgba(49, 40, 40, 0.7);
-    /* Цвет и прозрачность слоя */
-}
-
-.offerout_paragr {
-    justify-content: center;
-    grid-column: 1 / 2;
-    /* Занимает первый столбец */
-    grid-row: 1 / 2;
-    /* Занимает первую строку */
-    z-index: 2;
-
-text-align: center;
-    position: relative;
-    z-index: 1;
 }
 
 .picture1 {
